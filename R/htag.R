@@ -8,6 +8,7 @@
 
 
 htag <- function(url, hTag = "h1") {
+  require(magrittr)
   require(rvest)
   htag <- as.data.frame(try(url %>%
                               as.character() %>%
