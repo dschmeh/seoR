@@ -145,14 +145,14 @@ domainAge(url)
 ```
 
 ## Google Mobile Friendly testing API in R
-The mobileFriendly-Function provides you an API-Access to the Mobile Friendly Testing API from Google. You will get a TRUE or FALSE for a given Url you want to test. This Google API is still in Beta and quite slow. You also will get 502-Errors quite often.
+The mobileFriendly-Function provides you an API-Access to the Mobile Friendly Testing API from Google. You will get a TRUE or FALSE for a given Url you want to test. This Google API is still in Beta and quite slow. You also will get 502-Errors quite often. You can find more information about this API her: https://developers.google.com/webmaster-tools/search-console-api/about
 ```
 url<-"https://www.r-project.org/"
 mobileFriendly(url)
 ```
 
 ## Google Pagespeed-API R
-The pageSpeed-Function allows you to retrieve Data from Googles Pagespeed API. You will get a Value between 0 and 100 for each tested Url. 
+The pageSpeed-Function allows you to retrieve Data from Googles Pagespeed API. You will get a Value between 0 and 100 for each tested Url. You can find more information about the API her: https://developers.google.com/speed/docs/insights/v2/getting-started
 ```
 url<-"https://www.r-project.org/"
 pageSpeed(url)
