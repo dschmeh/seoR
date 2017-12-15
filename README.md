@@ -101,7 +101,7 @@ url<-"https://www.r-project.org/"
 linkCount(url, uniqueLinks = FALSE)
 ```
 
-#Scraping Search Engines in R
+# Scraping Search Engines in R
 Beside scraping Data from Websites you can also scrape Data from various Searchengines.
 
 ## Number of results for a Keyword
@@ -127,7 +127,7 @@ url<-"https://www.r-project.org/"
 lastCached(url)
 ```
 
-#Third-Party Tools and APIs
+# Third-Party Tools and APIs
 We want to add more and more third party Tools and SEO-APIs to this Package. So if you have a ready Code or just a idea what could be missing, just ping us.
 
 ## W3C-Validate in R
