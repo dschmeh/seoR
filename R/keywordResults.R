@@ -8,6 +8,7 @@
 
 
 keywordResults <- function(keyword, searchengine = "google") {
+  require(magrittr)
   require(rvest)
   #SE Input error Handling missing
   if (searchengine == "google") {
