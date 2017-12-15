@@ -1,1 +1,6 @@
 exportPattern("^[[:alpha:]]+")
+import(httr)
+import(jsonlite)
+import(rvest)
+import(stringr)
+import(magrittr)
