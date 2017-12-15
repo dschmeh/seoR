@@ -7,6 +7,7 @@
 
 
 HTMLcanonical <- function(url) {
+  require(magrittr)
   require(rvest)
   can <- as.data.frame(try(url %>%
                              as.character() %>%
