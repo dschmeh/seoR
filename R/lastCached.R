@@ -6,6 +6,7 @@
 
 
 lastCached <- function(url) {
+  require(magrittr)
   require(rvest)
   url <-
     paste0("http://webcache.googleusercontent.com/search?q=cache:",
