@@ -7,6 +7,7 @@
 
 
 hrefLang <- function(url) {
+  require(magrittr)
   require(rvest)
   lang <- try(url %>%
                 as.character() %>%
