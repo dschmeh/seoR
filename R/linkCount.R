@@ -8,6 +8,7 @@
 
 
 linkCount <- function(url, uniqueLinks = FALSE) {
+  require(magrittr)
   require(rvest)
   links <- try(as.data.frame(url %>%
                                as.character() %>%
