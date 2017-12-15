@@ -12,5 +12,9 @@ HTMLdescription_length <- function(url) {
                read_html() %>%
                html_nodes("meta[name=description]") %>%
                html_attr("content"))
-  return(nchar(des, type = "chars"))
+   if (nrow(as.data.frame(des)) == 0) {
+    return("No Description")
+  } else {
+    return(nchar(des, type = "chars"))
+  }
 }
