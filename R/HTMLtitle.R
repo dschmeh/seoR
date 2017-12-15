@@ -6,6 +6,7 @@
 
 
 HTMLtitle <- function(url) {
+  require(magrittr)
   require(rvest)
   title <- try(url %>%
                  as.character() %>%
