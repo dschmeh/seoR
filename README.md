@@ -26,7 +26,7 @@ url<-"https://www.r-project.org/"
 HTMLtitle(url)
 ```
 
-## Getting the length of a Title Tag in README
+## Getting the length of a Title Tag in R
 The HTMLtitle_length-Function gives you the lenght of the Title Tage, scraped from a specified Url
 ```
 url<-"https://www.r-project.org/"
@@ -131,10 +131,10 @@ lastCached(url)
 We want to add more and more third party Tools and SEO-APIs to this Package. So if you have a ready Code or just a idea what could be missing, just ping us.
 
 ## W3C-Validate in R
-The w3c_validate-Function allows you to start and get the results of a w3c-Validation for a given URL. You get a Dataframe with the Errors and Warnings from the Report.
+The w3cValidate-Function allows you to start and get the results of a w3c-Validation for a given URL. You get a Dataframe with the Errors and Warnings from the Report.
 ```
 url<-"https://www.r-project.org/"
-w3c_validate(url)
+w3cValidate(url)
 ```
 
 ## Getting the Domain-Age in R
