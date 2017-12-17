@@ -112,6 +112,14 @@ keyword<-"R Project"
 keywordResults(keyword, searchengine = "google")
 ```
 
+## Get Google suggestions for a Keyword
+The googleSuggest-Function returns relevant longtail keywords for a specific Keyword. The function uses the Google Autocomplete functionality. You can specify the language in the call, default is "en". walkThrough is a logical input to add every letter of the alphabet before and after the keyword to get more related keywords.
+
+```
+keyword<-"R Project"
+googleSuggest(keyword, language = "en", walkThrough = FALSE)
+```
+
 ## Number of Pages in Index
 The pagesInIndex-function allows you to perform a "site"-Search on Google to get the number of PAges in the Index for a given Domain or URL-String.
 
