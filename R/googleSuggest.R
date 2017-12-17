@@ -1,6 +1,6 @@
 #' Function to retrive data from Google Suggest for a specific keyword
 #'
-#' This function allows you to get the Meta-Description of a specific URL.
+#' This function allows you to get more longtail Keywords for a specific given Keyword. The Tool uses the Google Autocomplete function to retrieve this keywords.
 #' @keyword The initial keyword you want to get suggestions for
 #' @walkThrough logical Input. If TRUE the function adds every letter before and after the keyword to loop through the Google Autocomplete.
 #' @language The language you want to get suggestions. Default is en.
