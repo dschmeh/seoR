@@ -7,5 +7,5 @@
 googleSuggest(keyword, language = "en", walkThrough = FALSE)
 }
 \description{
-This function allows you to get the Meta-Description of a specific URL.
+This function allows you to get more longtail Keywords for a specific given Keyword. The Tool uses the Google Autocomplete function to retrieve this keywords.
 }
