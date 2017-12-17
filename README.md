@@ -16,7 +16,7 @@ To get the current development version from github:
 devtools::install_github("dschmeh/seoR")
 ```
 
-# The HTML-Scarping Functions
+# The HTML-Scraping Functions
 The Package provides various Functions to retrieve Releveant informations from a given URL.
 
 ## Getting the HTML Title Tag of a URL in R
