@@ -181,16 +181,16 @@ mozUrlMetrics(page, Access_ID, Secret_Key)
 ### Moz Link Metrics in R
 The mozLinkMetrics-function allows you to get various Informations about the Backlinks of a specific URL/Domain. You can find more Informations about the API and the provided Data here:https://moz.com/help/guides/moz-api/mozscape/api-reference/link-metrics At the Moment you just get the Data provided by a free Account.
 To Use the API you can specify the following Parameters:
-page The page you want the data for (Requiered)
-Access_ID Your Moz Access ID (Requiered)
-Secret_Key Your Moz Secret Key (Requiered)
-Scope indicates which links to return based on whether the target and source URLs are pages, domains, or subdomains.
-Limit The default value of Limit is 1 and the maximum value is 50.
-Filter  excludes results unless they meet criteria you specify. You can specify more than one value by separating multiple Filter parameters with a plus symbol +.
-Sort Sort links results by:https://moz.com/help/guides/moz-api/mozscape/api-reference/link-metrics
-SourceCols is a bit flag: a numerical value specifying which data to include about source URLs that link to the target URL.
-TargetCols  is a bit flag: a numerical value specifying which data to include about the target URL.
-LinkCols is a bit flag: a numerical value specifying which data to include about the link itself (for example, if the link is nofollowed).
+* page The page you want the data for (Requiered)
+* Access_ID Your Moz Access ID (Requiered)
+* Secret_Key Your Moz Secret Key (Requiered)
+* Scope indicates which links to return based on whether the target and source URLs are pages, domains, or subdomains.
+* Limit The default value of Limit is 1 and the maximum value is 50.
+* Filter  excludes results unless they meet criteria you specify. You can specify more than one value by separating multiple Filter parameters with a plus symbol +.
+* Sort Sort links results by:https://moz.com/help/guides/moz-api/mozscape/api-reference/link-metrics
+* SourceCols is a bit flag: a numerical value specifying which data to include about source URLs that link to the target URL.
+* TargetCols  is a bit flag: a numerical value specifying which data to include about the target URL.
+* LinkCols is a bit flag: a numerical value specifying which data to include about the link itself (for example, if the link is nofollowed).
 ```
 page<-"https://www.r-project.org/"
 Access_ID<-{{YOUR_ACCESS_ID}}
