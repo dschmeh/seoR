@@ -2,6 +2,7 @@
 #'
 #' This function allows you to get the Meta-Description of a specific URL.
 #' @keyword The initial keyword you want to get suggestions for
+#' @walkThrough logical Input. If TRUE the function adds every letter before and after the keyword to loop through the Google Autocomplete.
 #' @language The language you want to get suggestions. Default is en.
 #' googleSuggest()
 
@@ -14,6 +15,10 @@ googleSuggest <-
     #Language Input check
     if (nchar(language) > 2) {
       warning("Please check your language input")
+    }
+    #walkThrough-Input check
+    if (!is.logical(walkThrough)) {
+      stop("The walkThrough should be a logical input")
     }
     keyword <- gsub(" ", "+", keyword)
     key <- read_html(
