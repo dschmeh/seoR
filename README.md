@@ -197,3 +197,10 @@ Access_ID<-{{YOUR_ACCESS_ID}}
 Secret_Key<-{{YOUR_SECRET_KEY}}
 mozLinkMetrics(page, Access_ID, Secret_Key, Scope = "page_to_page", Limit = 1, Filter = "",Sort = "",SourceCols = "536870916",TargetCols = "536870916", LinkCols = "")
 ```
+
+## Seo Diver API
+This function allows you to get Data from the SEO Diver API. http://de.seodiver.com/api Note: This Data is only available for DE,CH,AT Search Results. You get "Suchreichweite", "Suchwahrnehmung" and "Statische Sichtbarkeit"
+```
+page<-"r-project.org"
+seoDiver(url, type = "Suchreichweite")
+```
