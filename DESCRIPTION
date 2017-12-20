@@ -17,4 +17,5 @@ Depends:
     httr,
     rvest,
     stringr,
-    magrittr
+    magrittr,
+    XML
