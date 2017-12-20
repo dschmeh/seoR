@@ -101,6 +101,14 @@ url<-"https://www.r-project.org/"
 linkCount(url, uniqueLinks = FALSE)
 ```
 
+## Check for an URL in a XML-Sitemap
+Check if a given URL is found in a XML-Sitemap. For this you can also put in your Index-Sitemap.
+```
+url<-"https://www.r-bloggers.com/combining-faa-and-stepwise-correlation/"
+sitemap<-"https://www.r-bloggers.com/sitemap.xml"
+urlInSitemap(url, sitemap)
+```
+
 # Scraping Search Engines in R
 Beside scraping Data from Websites you can also scrape Data from various Searchengines.
 
