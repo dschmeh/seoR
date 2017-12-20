@@ -20,16 +20,16 @@ urlInSitemap <- function(url, sitemap) {
       loop <- (as.numeric(loop) + as.numeric(out_l))
     }
     if (loop > 0) {
-      out <- "Contains_URL"
+      out <- TRUE
     } else {
-      out <- "URL_not_found"
+      out <- FALSE
     }
   } else
   {
     if (sum(grepl(url, s$loc)) > 0) {
-      out <- "Contains_URL"
+      out <- TRUE
     } else {
-      out <- "URL_not_found"
+      out <- FALSE
     }
   }
   return(out)
