@@ -4,7 +4,7 @@
 \alias{linkCount}
 \title{Function to retrive the number of outgoing links for a given Url.}
 \usage{
-linkCount(url, uniqueLinks = FALSE)
+linkCount(url, linkType = "all", uniqueLinks = FALSE)
 }
 \description{
 This function allows you to get the number of outgoing links for a given URL.You can specify if you want to count same Links as one or not.
