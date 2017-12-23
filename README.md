@@ -62,7 +62,7 @@ HTMLrobots(url)
 ```
 
 ## H-Tags of a Website in R
-The htag-Functions gives you a Data Frame with all H-Tags on a give n URL. You just have to specify the H-Tag you want to get. As default you get H1.
+The htag-Functions gives you a Data Frame with all H-Tags on a given URL. You just have to specify the H-Tag you want to get. As default you get H1.
 ```
 url<-"https://www.r-project.org/"
 htag(url, hTag = "h1")
@@ -95,10 +95,10 @@ url<-"https://www.r-project.org/"
 extractLinks(url, uniqueLinks = FALSE)
 ```
 
-The linkCount-Function allows you to get the number of all Links on a specified Url.
+The linkCount-Function allows you to get the number of all Links on a specified Url. You can specify the LinkType you want to analyze. All Links, Just Internal Links or Links to other Domains (external). You can specify "all","external" and "internal". Default is "all"
 ```
 url<-"https://www.r-project.org/"
-linkCount(url, uniqueLinks = FALSE)
+linkCount(url, linkType = "all", uniqueLinks = FALSE)
 ```
 
 ## Check for an URL in a XML-Sitemap
