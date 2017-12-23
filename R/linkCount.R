@@ -12,6 +12,11 @@ linkCount <- function(url,
   require(magrittr)
   require(rvest)
   require(stringr)
+  
+    if (linkType != "all") {
+    warning("At the moment the function doesn´t support realativ Links")
+  }
+  
   domain <-
     stringr::str_extract(
       url,
