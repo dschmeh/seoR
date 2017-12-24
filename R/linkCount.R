@@ -6,17 +6,15 @@
 #' @uniqueLinks Logical. Count unique Links as one is TRUE. Default is FALSE
 #' linkCount()
 
+
+
 linkCount <- function(url,
                       linkType = "all",
                       uniqueLinks = FALSE) {
   require(magrittr)
   require(rvest)
   require(stringr)
-  
-    if (linkType != "all") {
-    warning("At the moment the function doesn´t support realativ Links")
-  }
-  
+
   domain <-
     stringr::str_extract(
       url,
@@ -31,24 +29,32 @@ linkCount <- function(url,
   if (uniqueLinks == FALSE)	{
     #Starting with not uniue Links
     if (linkType == "external") {
-      return(nrow(links) - length(grepl(domain, links$links)[grepl(domain, links$links) ==
-                                                               TRUE]))
+      return(nrow(links) - (length(grepl(
+        domain, links$links
+      )[grepl(domain, links$links) == TRUE]) + length(grepl(
+        "^\\/.*", links$links
+      )[grepl("^\\/.*", links$links) == TRUE])))
     } else {
       if (linkType == "internal") {
-        return(length(grepl(domain, links$links)[grepl(domain, links$links) == TRUE]))
+        return (length(grepl(domain, links$links)[grepl(domain, links$links) == TRUE]) +
+                  length(grepl("^\\/.*", links$links)[grepl("^\\/.*", links$links) == TRUE]))
       } else {
         return(nrow(links))
       }
     }
   } else {
     if (linkType == "external") {
-      return(nrow(unique(links)) - length(grepl(domain, unique(links$links))[grepl(domain, unique(links$links)) ==
-                                                                               TRUE]))
+      return(nrow(unique(links)) - (length(grepl(
+        domain, links$links
+      )[grepl(domain, unique(links$links)) == TRUE]) + length(grepl(
+        "^\\/.*", unique(links$links)
+      )[grepl("^\\/.*", links$links) == TRUE])))
     } else {
       if (linkType == "internal") {
-        return(length(grepl(domain, unique(
-          links$links
-        ))[grepl(domain, unique(links$links)) == TRUE]))
+        return(length(grepl(domain, links$links)[grepl(domain, unique(links$links)) == TRUE]) +
+                 length(grepl("^\\/.*", unique(
+                   links$links
+                 ))[grepl("^\\/.*", links$links) == TRUE]))
       } else {
         return(nrow(unique(links)))
       }
