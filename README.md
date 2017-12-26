@@ -143,6 +143,20 @@ url<-"https://www.r-project.org/"
 lastCached(url)
 ```
 
+## Check if a URL is blocked by robots.txt
+The allowedByRobots-Function checks if a given URL is blocked by the robots.txt-File. It´s possible to specify the bot, for example "googlebot", to check if this bot is blocked.
+```
+url<-"https://www.r-project.org/"
+allowedByRobots(url, bot = "googlebot")
+```
+
+## Check if a URL is indexable
+The isIndexable-Functions checks if a given URL can be indexed by a Searchengine. Therefor the Function runs various test, on the Status Code, the Canonical Link element, the Meta-Robots and the robots.txt. The errorType specifys if just TRUE/FALSE is returned or also the reason why the URL can´t be indexed. 
+```
+url<-"https://www.r-project.org/"
+isIndexable(url, bot = "googlebot", errorType = TRUE)
+```
+
 # Third-Party Tools and APIs
 We want to add more and more third party Tools and SEO-APIs to this Package. So if you have a ready Code or just a idea what could be missing, just ping us.
 
