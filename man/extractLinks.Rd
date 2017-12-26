@@ -4,7 +4,7 @@
 \alias{extractLinks}
 \title{Function to extract all links of a given Url.}
 \usage{
-extractLinks(url, uniqueLinks = FALSE)
+extractLinks(url, linkType = "all", uniqueLinks = FALSE)
 }
 \description{
 This function allows you to extract all links of a given URL. You can specify if you just want unique Links or all. The output is a Data Frame.
