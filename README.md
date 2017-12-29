@@ -234,11 +234,12 @@ url<-"r-project.org"
 seoDiver(url, type = "Suchreichweite")
 ```
 
-#Screaming Frog Data in R
+# Screaming Frog Data in R
 Various Functions to work with data from a Screaming Frog Crawl in R.
 
-##Compare a Screaming Frog Crawl with URLs in a Sitemap.xml
+## Compare a Screaming Frog Crawl with URLs in a Sitemap.xml
 The screamingfrog_crawlVsSitemap-Functions provides a possibility to compare data from a Screaming Frog Crawl with the URLs in a sitemap.xml. It´s possible to find deltas in both data sources. 
+
 ```
 crawl<-"C:/Users/User/Downloads/internal_all.csv"
 sitemap<-"http://ohren-reinigen.de/sitemap.xml"
