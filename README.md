@@ -2,7 +2,7 @@
 The Package provides various functions to get informations relevant for SEO related analysis in R
 
 The Goal of this package is to provide various functions to help SEOs retrive relevant informations from various APIs or Websites direct in R.
-The Package is splitted in three parts: Scraping Data from Websites, scraping Data from Search Engines and getting Data from various SEO-APIs. 
+The Package is splitted in four parts: Scraping Data from Websites, scraping Data from Search Engines and getting Data from various SEO-APIs and working with data from a Screaming Frog Crawl. 
 It´s possible to scrape SEO-relevant parts of a Website. So you are able to extract Links, Meta-Tags, H-Tags, and many more.
 The package also provides functions to scrape informations form search engines. Like Indexed Pages, results for a given Keyword.
 The third part of the Package are the SEO-Tool APIs, that are connected. It´s possible to get Informations from Whois, Google Pagespeed and many more direct in the R Console.
@@ -101,6 +101,13 @@ url<-"https://www.r-project.org/"
 linkCount(url, linkType = "all", uniqueLinks = FALSE)
 ```
 
+##Download a Sitemap in R
+The downloadSitemap-Function provides a possibility to Download a XML-Sitemap to a Dataframe. You can specify one Sitemap you want to Download or a Index-Sitemap.
+```
+sitemap<-"http://ohren-reinigen.de/sitemap.xml"
+downloadSitemap(sitemap)
+```
+
 ## Check for an URL in a XML-Sitemap
 Check if a given URL is found in a XML-Sitemap. For this you can also put in your Index-Sitemap.
 ```
@@ -170,7 +177,7 @@ w3cValidate(url)
 ## Getting the Domain-Age in R
 The domainAge-Function gives you the Age of a given Domain (Attention: At the Moment we just can retrieve the Data from .com-Domains)
 ```
-url<-"https://amazon.com
+url<-"https://amazon.com"
 domainAge(url)
 ```
 
@@ -225,4 +232,15 @@ This function allows you to get Data from the SEO Diver API. http://de.seodiver.
 ```
 url<-"r-project.org"
 seoDiver(url, type = "Suchreichweite")
+```
+
+#Screaming Frog Data in R
+Various Functions to work with data from a Screaming Frog Crawl in R.
+
+##Compare a Screaming Frog Crawl with URLs in a Sitemap.xml
+The screamingfrog_crawlVsSitemap-Functions provides a possibility to compare data from a Screaming Frog Crawl with the URLs in a sitemap.xml. It´s possible to find deltas in both data sources. 
+```
+crawl<-"C:/Users/User/Downloads/internal_all.csv"
+sitemap<-"http://ohren-reinigen.de/sitemap.xml"
+screamingfrog_crawlVsSitemap(crawl, sitemap, deltaIn = "sitemap", checkImages = FALSE)
 ```
