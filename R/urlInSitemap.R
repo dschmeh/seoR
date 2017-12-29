@@ -6,12 +6,12 @@
 #' urlInSitemap()
 
 urlInSitemap <- function(url, sitemap) {
-  s <- xmlToDataFrame(sitemap)
+  s <- XML::xmlToDataFrame(sitemap)
   #check if Sitemap is Index Sitemap
   if ((nrow(s) / sum(grepl("xml", s$loc))) > 0.8) {
     loop <- 0
     for (i in 1:nrow(s)) {
-      sm <- xmlToDataFrame(as.character(s$loc[i]))
+      sm <- XML::xmlToDataFrame(as.character(s$loc[i]))
       if (sum(grepl(url, sm$loc)) > 0) {
         out_l <- 1
       } else {
