@@ -101,7 +101,7 @@ url<-"https://www.r-project.org/"
 linkCount(url, linkType = "all", uniqueLinks = FALSE)
 ```
 
-##Download a Sitemap in R
+## Download a Sitemap in R
 The downloadSitemap-Function provides a possibility to Download a XML-Sitemap to a Dataframe. You can specify one Sitemap you want to Download or a Index-Sitemap.
 ```
 sitemap<-"http://ohren-reinigen.de/sitemap.xml"
