@@ -2,7 +2,7 @@
 The Package provides various functions to get informations relevant for SEO related analysis in R
 
 The Goal of this package is to provide various functions to help SEOs retrive relevant informations from various APIs or Websites direct in R.
-The Package is splitted in four parts: Scraping Data from Websites, scraping Data from Search Engines and getting Data from various SEO-APIs and working with data from a Screaming Frog Crawl. 
+The Package is splitted in four parts: Scraping Data from Websites, scraping Data from Search Engines, getting Data from various SEO-APIs and working with data from a Screaming Frog Crawl. 
 It´s possible to scrape SEO-relevant parts of a Website. So you are able to extract Links, Meta-Tags, H-Tags, and many more.
 The package also provides functions to scrape informations form search engines. Like Indexed Pages, results for a given Keyword.
 The third part of the Package are the SEO-Tool APIs, that are connected. It´s possible to get Informations from Whois, Google Pagespeed and many more direct in the R Console.
