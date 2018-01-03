@@ -234,6 +234,14 @@ url<-"r-project.org"
 seoDiver(url, type = "Suchreichweite")
 ```
 
+## Social Shares for a URL via sharedcount.com-API
+This function allows to get the shares of a given Domain into R. Therefore the function uses the Sharedcount-API. To use the function you have to set up a free API-Account here: https://www.sharedcount.com/
+```
+url<-"https://www.r-project.org/"
+key<-{{YOUR_API_KEY}}
+sharedcount(url, key)
+```
+
 # Screaming Frog Data in R
 Various Functions to work with data from a Screaming Frog Crawl in R.
 
