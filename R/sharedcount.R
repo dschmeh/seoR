@@ -7,6 +7,10 @@
 
 
 sharedcount <- function(url, key) {
+  if (isTRUE(url_with_http(url))) {
+  } else {
+    warning("Please provide a URL like: http://www.example.com")
+  }
   sc <-
     jsonlite::fromJSON(paste0(
       "https://api.sharedcount.com/v1.0/?url=",
