@@ -16,15 +16,6 @@ screamingfrog_crawlVsSitemap <-
     #Import the Screaming Frog Crawl data
     sc_crawl <- readr::read_csv(crawl, skip = 1)
 
-    #Check if it´s the correct File
-    if (isTRUE(internal_all_file(sc_crawl))) {
-
-    } else {
-      stop(
-        "Please make sure, that the File you provide is a not modified export from Screaming Frog"
-      )
-    }
-
     crawled_pages <-
       as.data.frame(cbind(sc_crawl$Address, sc_crawl$Content)) # Just HTML-Pages
     colnames(crawled_pages)[1] <- "loc"
@@ -39,7 +30,7 @@ screamingfrog_crawlVsSitemap <-
         subset(
           crawled_pages,
           V2 == "text/html; charset=UTF-8" |
-            V2 == "image/png" | V2 == "image/jpeg"
+            V2 == "image/png" | V2 == "image/jpeg"  | V2 == "image/gif"
         )
     }
 
