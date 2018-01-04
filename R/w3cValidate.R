@@ -8,7 +8,7 @@
 w3cValidate <- function(url) {
   require(rvest)
   w3c <-
-    rvest::read_html(paste0(
+    read_html(paste0(
       "https://validator.w3.org/nu/?doc=",
       URLencode(url),
       "&out=json"
