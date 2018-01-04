@@ -1,6 +1,6 @@
 Package: seoR
 Type: Package
-Title: The Package provides various function to get Informations relevant for Search Engine Optimasation
+Title: The Package provides various function to get Informations relevant for SEO related analyzes in R.
 Version: 0.1.0
 Author: Daniel Schmeh
 Maintainer: Daniel Schmeh <danielschmeh@gmail.com>
