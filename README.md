@@ -253,3 +253,11 @@ crawl<-"C:/Users/User/Downloads/internal_all.csv"
 sitemap<-"http://ohren-reinigen.de/sitemap.xml"
 screamingfrog_crawlVsSitemap(crawl, sitemap, deltaIn = "sitemap", checkImages = FALSE)
 ```
+
+## Computating internal Pagerank in R
+The screamingfrog_internalPagerank-Function provides a possibility to computate the internal Pagerank based on a Screaming Frog Crawl. For the function you need to Download the "all_outlinks.csv"-File from the crawl you want to analyze.
+
+```
+crawl<-"C:/Users/User/Downloads/all_outlinks.csv"
+screamingfrog_internalPagerank(crawl, domain = NULL)
+```
