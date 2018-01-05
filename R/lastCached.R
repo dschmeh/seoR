@@ -6,7 +6,6 @@
 
 
 lastCached <- function(url) {
-  require(magrittr)
   require(rvest)
   url <-
     paste0("http://webcache.googleusercontent.com/search?q=cache:",
@@ -20,5 +19,9 @@ lastCached <- function(url) {
       res,
       "([0-9]{1,2}..[a-zA-Z]{1,3}..[0-9]{4}|[a-zA-Z]{1,3}.[0-9]{1,2}\\,.[0-9]{4}).[0-9]{2}\\:[0-9]{2}\\:[0-9]{2}"
     )
-  return(res)
+  if (is.na(res)) {
+    return("Page not cached")
+  } else {
+    return(res)
+  }
 }
