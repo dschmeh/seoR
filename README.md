@@ -261,3 +261,6 @@ The screamingfrog_internalPagerank-Function provides a possibility to computate 
 crawl<-"C:/Users/User/Downloads/all_outlinks.csv"
 screamingfrog_internalPagerank(crawl, domain = NULL)
 ```
+
+# Contributing
+If you found a bug or want to propose a feature, feel free to visit the issues page. You can also write me a mail: danielschmeh@gmail.com
