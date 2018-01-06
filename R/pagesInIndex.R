@@ -7,8 +7,6 @@
 
 
 pagesInIndex <- function(url) {
-  require(magrittr)
-  require(rvest)
   url <- paste0("https://www.google.com/search?q=site:", URLencode(url))
   res <- try(url %>%
                as.character() %>%
