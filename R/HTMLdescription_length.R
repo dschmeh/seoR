@@ -5,8 +5,8 @@
 #' HTMLdescription_length()
 
 HTMLdescription_length <- function(url) {
-  require(magrittr)
-  require(rvest)
+  requireNamespace(magrittr)
+  requireNamespace(rvest)
   des <- try(url %>%
                as.character() %>%
                read_html() %>%
