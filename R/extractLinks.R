@@ -12,9 +12,6 @@ extractLinks <-
   function(url,
            linkType = 'all',
            uniqueLinks = FALSE) {
-    requireNamespace(magrittr)
-    requireNamespace(rvest)
-    requireNamespace(stringr)
 
     domain <-
       stringr::str_extract(
