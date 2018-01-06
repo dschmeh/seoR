@@ -25,6 +25,6 @@ mobileFriendly <-
       return(mm$mobileFriendliness)
     } else
     {
-      return(paste0("Couldn´t retrieve Data. Status Code: ", mf$status_code))
+      return(paste0("Could not retrieve Data. Status Code: ", mf$status_code))
     }
   }
