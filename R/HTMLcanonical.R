@@ -7,8 +7,6 @@
 
 
 HTMLcanonical <- function(url) {
-  requireNamespace(magrittr)
-  requireNamespace(rvest)
   can <- as.data.frame(try(url %>%
                              as.character() %>%
                              read_html() %>%
