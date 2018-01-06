@@ -20,4 +20,7 @@ Depends:
     magrittr,
     XML,
     robotstxt,
-    igraph
+    igraph,
+    digest,
+    dplyr,
+    readr
