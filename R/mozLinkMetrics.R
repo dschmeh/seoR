@@ -31,7 +31,6 @@ mozLinkMetrics <-
       warning("The Limit for the API is 50")
       Limit <- 50
     }
-    require(digest)
     timestamp <- round(as.numeric(as.POSIXct(Sys.time() + 300)))
     moz_call <-
       paste0(
@@ -60,7 +59,7 @@ mozLinkMetrics <-
         "&Expires=",
         timestamp,
         "&Signature=",
-        URLencode(base64(
+        URLencode(digest::base64(
           hmac(Secret_Key, paste0(Access_ID, '\n', timestamp), "sha1", raw = TRUE)
         ), reserved = TRUE)
       )
