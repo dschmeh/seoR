@@ -6,7 +6,6 @@
 
 
 lastCached <- function(url) {
-  requireNamespace(rvest)
   url <-
     paste0("http://webcache.googleusercontent.com/search?q=cache:",
            url)
