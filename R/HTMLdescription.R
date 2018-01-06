@@ -6,8 +6,6 @@
 
 
 HTMLdescription <- function(url) {
-  requireNamespace(magrittr)
-  requireNamespace(rvest)
   des <- try(url %>%
                as.character() %>%
                read_html() %>%
