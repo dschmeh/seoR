@@ -9,7 +9,6 @@
 mozUrlMetrics <- function(page, Access_ID, Secret_Key) {
   #TODO: Add the possibility to specific Cols
   #Generate the key
-  require(digest)
   timestamp <- round(as.numeric(as.POSIXct(Sys.time() + 300)))
   moz_call <-
     paste0(
@@ -20,7 +19,7 @@ mozUrlMetrics <- function(page, Access_ID, Secret_Key) {
       "&Expires=",
       timestamp,
       "&Signature=",
-      URLencode(base64(
+      URLencode(digist::base64(
         hmac(Secret_Key, paste0(Access_ID, '\n', timestamp), "sha1", raw = TRUE)
       ), reserved = TRUE)
     )
