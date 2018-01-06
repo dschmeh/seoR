@@ -6,7 +6,7 @@
 #' allowedByRobots()
 
 allowedByRobots <- function(url, bot = "googlebot") {
-  require(robotstxt)
+  requireNamespace(robotstxt)
   domain <-
     stringr::str_extract(
       url,
