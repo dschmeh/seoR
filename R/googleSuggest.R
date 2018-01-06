@@ -10,8 +10,6 @@ googleSuggest <-
   function(keyword,
            language = "en",
            walkThrough = FALSE) {
-    require(magrittr)
-    require(rvest)
     #Language Input check
     if (nchar(language) > 2) {
       warning("Please check your language input")
