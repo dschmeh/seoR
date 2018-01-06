@@ -11,9 +11,6 @@
 linkCount <- function(url,
                       linkType = "all",
                       uniqueLinks = FALSE) {
-  require(magrittr)
-  require(rvest)
-  require(stringr)
 
   domain <-
     stringr::str_extract(
