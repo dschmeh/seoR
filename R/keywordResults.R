@@ -8,8 +8,7 @@
 
 
 keywordResults <- function(keyword, searchengine = "google") {
-  require(magrittr)
-  require(rvest)
+
   #SE Input error Handling missing
   keyword<-gsub(" ","+",keyword)
   if (searchengine == "google") {
