@@ -7,8 +7,6 @@
 
 
 hrefLang <- function(url) {
-  requireNamespace(magrittr)
-  requireNamespace(rvest)
   lang <- try(url %>%
                 as.character() %>%
                 read_html() %>%
