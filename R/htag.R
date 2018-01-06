@@ -8,8 +8,8 @@
 
 
 htag <- function(url, hTag = "h1") {
-  require(magrittr)
-  require(rvest)
+  requireNamespace(magrittr)
+  requireNamespace(rvest)
   htag <- as.data.frame(try(url %>%
                               as.character() %>%
                               read_html() %>%
