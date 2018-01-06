@@ -7,8 +7,6 @@
 
 
 HTMLrobots <- function(url) {
-  require(magrittr)
-  require(rvest)
   try(url %>%
         as.character() %>%
         read_html() %>%
