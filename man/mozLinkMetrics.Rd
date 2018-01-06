@@ -8,6 +8,18 @@ mozLinkMetrics(page, Access_ID, Secret_Key, Scope = "page_to_page",
   Limit = 1, Filter = "", Sort = "", SourceCols = "536870916",
   TargetCols = "536870916", LinkCols = "")
 }
+\arguments{
+\item{page}{character. The Url you want to perform the test for.}
+\item{Access_ID}{character. Your Moz Access ID.}
+\item{Secret_Key}{character. Your Moz Secret Key.}
+\item{Scope}{character. indicates which links to return based on whether the target and source URLs are pages, domains, or subdomains.}
+\item{Limit}{numerical. The default value of Limit is 1 and the maximum value is 50.}
+\item{Filter}{character. excludes results unless they meet criteria you specify. You can specify more than one value by separating multiple Filter parameters with a plus symbol +.}
+\item{Sort}{character. Sort links results by:https://moz.com/help/guides/moz-api/mozscape/api-reference/link-metrics}
+\item{SourceCols}{is a bit flag: a numerical value specifying which data to include about source URLs that link to the target URL.}
+\item{TargetCols}{is a bit flag: a numerical value specifying which data to include about the target URL.}
+\item{LinkCols}{is a bit flag: a numerical value specifying which data to include about the link itself (for example, if the link is nofollowed).}
+}
 \description{
 This function allows you to get the Moz Link Metrics. You need a API Key to retrieve this Data. You can generate one for free here: https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account At the Moment you just get the Data provided by a free Account.
 }

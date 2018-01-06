@@ -6,6 +6,11 @@
 \usage{
 isIndexable(url, bot = "googlebot", errorType = TRUE)
 }
+\arguments{
+\item{url}{character. The url you want to check the indexability for.}
+\item{bot}{character. The bot you want to check the indexability with. Default is googlebot}
+\item{errorType}{logical. Retrieves the Error, why the URL can´t be indexed. Attention not all rules at once are displayed.}
+}
 \description{
 This function checks if a given URL is indexable. Therfore it checks different rules:
 Status-Code: Does the URl gives a correct Status-Code (200)

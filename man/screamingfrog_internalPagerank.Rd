@@ -6,6 +6,10 @@
 \usage{
 screamingfrog_internalPagerank(crawl, domain = NULL)
 }
+\arguments{
+\item{crawl}{character. The Path to the exportet Screaming Frog csv-File.}
+\item{domain}{character. Spcify your domain to filter outgoing Links.}
+}
 \description{
 This function allows you to calculate the internal PageRank of a given Domain. The calculation is based on a ScreamingFrog Crawl and the export "all_outlinks.csv".
 }

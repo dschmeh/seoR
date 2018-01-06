@@ -6,6 +6,9 @@
 \usage{
 domainAge(domain)
 }
+\arguments{
+\item{domain}{character. The domain you want to check.}
+}
 \description{
 This function allows you to get the Do´main Age for a given Domain. (Attention:At the moment just possible with .com-Domains)
 }

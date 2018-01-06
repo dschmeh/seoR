@@ -6,6 +6,11 @@
 \usage{
 googleSuggest(keyword, language = "en", walkThrough = FALSE)
 }
+\arguments{
+\item{keyword}{character. The initial keyword you want to get suggestions for.}
+\item{language}{character. The language you want to get suggestions. Default is en.}
+\item{walkThrough}{logical. If TRUE the function adds every letter before and after the keyword to loop through the Google Autocomplete.}
+}
 \description{
 This function allows you to get more longtail Keywords for a specific given Keyword. The Tool uses the Google Autocomplete function to retrieve this keywords.
 }

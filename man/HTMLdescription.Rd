@@ -6,6 +6,9 @@
 \usage{
 HTMLdescription(url)
 }
+\arguments{
+\item{url}{character. The url you want to check.}
+}
 \description{
 This function allows you to get the Meta-Description of a specific URL.
 }

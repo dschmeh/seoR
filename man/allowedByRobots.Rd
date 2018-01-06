@@ -6,6 +6,10 @@
 \usage{
 allowedByRobots(url, bot = "googlebot")
 }
+\arguments{
+\item{url}{character. The url you want to check.}
+\item{bot}{character. The bot you want to check the indexability with. Default is googlebot.}
+}
 \description{
 This function checks if a given URL is blocked by the robots.txt file of the website.
 }

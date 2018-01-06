@@ -6,6 +6,9 @@
 \usage{
 downloadSitemap(sitemap)
 }
+\arguments{
+\item{sitemap}{character. The sitemap you want to download.}
+}
 \description{
 This function allows to Download the Sitemap.xml of a given Webpage
 }

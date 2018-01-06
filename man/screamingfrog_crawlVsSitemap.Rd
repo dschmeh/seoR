@@ -7,6 +7,12 @@
 screamingfrog_crawlVsSitemap(crawl, sitemap, deltaIn = "sitemap",
   checkImages = FALSE)
 }
+\arguments{
+\item{crawl}{character. The Path to the exportet Screaming Frog csv-File.}
+\item{sitemap}{character. The Sitemap you want to compare with the Crawl.}
+\item{deltaIn}{character. The Delta you want to analyze. Do you want to get the URLs in the Crawl missing in the Sitemap = "crawl" or the URLs in the Sitemap.xml not found in the Crawl = "sitemap".}
+\item{checkImages}{logical. Do you want to check the Images as well. Default is FALSE.}
+}
 \description{
 This function allows to compare the crawled URLs with the URLs in the sitemap.xml. The Output are the missing URLs - in the Sitemap or in the Crawl
 }

@@ -6,6 +6,11 @@
 \usage{
 mozUrlMetrics(page, Access_ID, Secret_Key)
 }
+\arguments{
+\item{page}{character. The Url you want to perform the test for.}
+\item{Access_ID}{character. Your Moz Access ID}
+\item{Secret_Key}{character. Your Moz Secret Key}
+}
 \description{
 This function allows you to get the Moz URL Metrics. You need a API Key to retrieve this Data. You can generate one for free here: https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account At the Moment you just get the Data provided by a free Account.
 }

@@ -6,6 +6,9 @@
 \usage{
 HTMLtitle(url)
 }
+\arguments{
+\item{url}{character. The url you want to check.}
+}
 \description{
 This function allows you to get the title of a specific URL.
 }

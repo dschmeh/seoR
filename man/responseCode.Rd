@@ -6,6 +6,9 @@
 \usage{
 responseCode(url)
 }
+\arguments{
+\item{url}{character. The url you want to check the indexability for.}
+}
 \description{
 This function allows you to get the the status Code of a given URL
 }

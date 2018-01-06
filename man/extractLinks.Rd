@@ -6,6 +6,11 @@
 \usage{
 extractLinks(url, linkType = "all", uniqueLinks = FALSE)
 }
+\arguments{
+\item{url}{character. The url you want to extract the Links from.}
+\item{linkType}{character. What type of Links you want to check? ALL, or just "internal" or "external".}
+\item{uniqueLinks}{logical. Extract unique Links as one is TRUE. Default is FALSE.}
+}
 \description{
 This function allows you to extract all links of a given URL. You can specify if you just want unique Links or all. The output is a Data Frame.
 }

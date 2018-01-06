@@ -6,6 +6,11 @@
 \usage{
 linkCount(url, linkType = "all", uniqueLinks = FALSE)
 }
+\arguments{
+\item{url}{character. The url you want to analyze.}
+\item{linkType}{character. The LinkType you want to analyze. All Links, Just Internal Links or Links to other Domains (external). You can specify "all","external" and "internal". Default is "all"}
+\item{uniqueLinks}{Logical. Count unique Links as one is TRUE. Default is FALSE}
+}
 \description{
 This function allows you to get the number of outgoing links for a given URL.You can specify if you want to count same Links as one or not.
 }

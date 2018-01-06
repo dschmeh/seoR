@@ -6,6 +6,9 @@
 \usage{
 w3cValidate(url)
 }
+\arguments{
+\item{url}{character. The URL you want to check}
+}
 \description{
 This function allows you to perform a W3C Validation test for a given URL. You will get the number of Errors and Warnings for the URL as Data Frame.
 }
