@@ -4,7 +4,7 @@
 \alias{googleSuggest}
 \title{Function to retrive data from Google Suggest for a specific keyword}
 \usage{
-googleSuggest(keyword, language = "en", walkThrough = FALSE)
+googleSuggest(keyword, language = "en", walkThrough = FALSE, questions = FALSE, prepositions = FALSE, comparisons = FALSE)
 }
 \arguments{
 \item{keyword}{character. The initial keyword you want to get suggestions for.}
