@@ -1,12 +1,13 @@
 #' Function to retrive the hrefLang-Tag for a given URL
 #'
 #' This function allows you to get the hrefLang-Tags for a given URL. You get the Output as a Data Frame containing the Link and the Country/Language specififcation.
-#' @url The URL you want to get the hrefLang-Tag for
+#' @param url The URL you want to get the hrefLang-Tag for
 #' hrefLang()
 
 
 
 hrefLang <- function(url) {
+
   lang <- try(url %>%
                 as.character() %>%
                 read_html() %>%

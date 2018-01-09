@@ -1,7 +1,7 @@
 #' Function to retrive the Meta Robots for a given URL
 #'
 #' This function allows you to get the Meta Robots for a given URL.
-#' @url The URL you want to get the Meta Robots for
+#' @param url The URL you want to get the Meta Robots for
 #' HTMLrobots()
 
 

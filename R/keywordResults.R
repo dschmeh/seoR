@@ -1,8 +1,8 @@
 #' Function to retrive the Number of results for a given Keyword
 #'
 #' This function allows you to get the number of Results for a given Keyword. You can get the value even from Google or Bing, by specifing this in the Call.
-#' @keyword The keyword you want to get the number of results for
-#' @searchengine The Searchengine you want to get the results form. Even Google or Bing. Default is Google.
+#' @param keyword The keyword you want to get the number of results for
+#' @param searchengine The Searchengine you want to get the results form. Even Google or Bing. Default is Google.
 #' keywordResults()
 
 
@@ -10,7 +10,6 @@
 keywordResults <- function(keyword, searchengine = "google") {
 
   #SE Input error Handling missing
-  keyword<-gsub(" ","+",keyword)
   if (searchengine == "google") {
     url <- paste0("https://www.google.com/search?q=", keyword)
     res <- try(url %>%

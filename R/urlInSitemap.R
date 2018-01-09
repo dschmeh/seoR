@@ -1,8 +1,8 @@
 #' Function to check if a given URL is in a XML-Sitemap
 #'
 #' This function allows you to check if a given URL is found in a XML-Sitemap. For this you can also put in your Index-Sitemap.
-#' @url The URL you want to check
-#' @sitemap The Link to the Sitemap you want to find the URL in
+#' @param url The URL you want to check
+#' @param sitemap The Link to the Sitemap you want to find the URL in
 #' urlInSitemap()
 
 urlInSitemap <- function(url, sitemap) {

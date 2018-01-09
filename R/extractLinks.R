@@ -1,9 +1,9 @@
 #' Function to extract all links of a given Url.
 #'
 #' This function allows you to extract all links of a given URL. You can specify if you just want unique Links or all. The output is a Data Frame.
-#' @url The url you want to extract the Links of
-#' @linkType The LinkType you want to analyze. All Links, Just Internal Links or Links to other Domains (external). You can specify "all","external" and "internal". Default is "all"
-#' @uniqueLinks Logical. Extract unique Links as one is TRUE. Default is FALSE
+#' @param url The url you want to extract the Links of
+#' @param linkType The LinkType you want to analyze. All Links, Just Internal Links or Links to other Domains (external). You can specify "all","external" and "internal". Default is "all"
+#' @param uniqueLinks Logical. Extract unique Links as one is TRUE. Default is FALSE
 #' extractLinks()
 
 
@@ -12,6 +12,7 @@ extractLinks <-
   function(url,
            linkType = 'all',
            uniqueLinks = FALSE) {
+
 
     domain <-
       stringr::str_extract(

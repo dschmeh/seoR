@@ -1,7 +1,7 @@
 #' Function to retrieve the Age of a given Domain
 #'
 #' This function allows you to get the Do´main Age for a given Domain. (Attention:At the moment just possible with .com-Domains)
-#' @domain The domain you want to get the age for.
+#' @param domain The domain you want to get the age for.
 #' domainAge()
 
 

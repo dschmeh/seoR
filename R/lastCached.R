@@ -1,11 +1,12 @@
 #' Function to get the last Google Cache Date for a URL
 #'
 #' This function allows you to get the latest Google Cache Date for a given URL.
-#' @url The url you want to get the Cache Date
+#' @param url The url you want to get the Cache Date
 #' lastCached()
 
 
 lastCached <- function(url) {
+
   url <-
     paste0("http://webcache.googleusercontent.com/search?q=cache:",
            url)

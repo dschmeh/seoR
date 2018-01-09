@@ -1,9 +1,9 @@
 #' Function to retrive the number of outgoing links for a given Url.
 #'
 #' This function allows you to get the number of outgoing links for a given URL.You can specify if you want to count same Links as one or not.
-#' @url The url you want to get the number of outgoing links for
-#' @linkType The LinkType you want to analyze. All Links, Just Internal Links or Links to other Domains (external). You can specify "all","external" and "internal". Default is "all"
-#' @uniqueLinks Logical. Count unique Links as one is TRUE. Default is FALSE
+#' @param url The url you want to get the number of outgoing links for
+#' @param linkType The LinkType you want to analyze. All Links, Just Internal Links or Links to other Domains (external). You can specify "all","external" and "internal". Default is "all"
+#' @param uniqueLinks Logical. Count unique Links as one is TRUE. Default is FALSE
 #' linkCount()
 
 

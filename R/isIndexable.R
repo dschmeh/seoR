@@ -5,9 +5,9 @@
 #' Canonical-Link: Is the canonical Link Element implementet, so the URL can be indexed?
 #' Meta-Robots: Is the Meta-Robots blocking the ULR?
 #' robots.txt: Is the robots.txt blocking the URL from crawling?
-#' @url The url you want to check the indexability for
-#' @bot The bot you want to check the indexability with. Default is googlebot
-#' @errorType Logical. Retrieves the Error, why the URL can´t be indexed. Attention not all rules at once are displayed.
+#' @param url The url you want to check the indexability for
+#' @param bot The bot you want to check the indexability with. Default is googlebot
+#' @param errorType Logical. Retrieves the Error, why the URL can´t be indexed. Attention not all rules at once are displayed.
 #' isIndexable()
 
 

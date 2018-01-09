@@ -1,8 +1,8 @@
 #' Function to retrieve Data from Googles Mobile Friendly Testing API
 #'
 #' This function allows you to retrive Data from Googles Mobile Friendly Test API. The Function retrives the data for a given Url. The API provides you a TRUE for "is mobile friendly" and FALSE for "is not mobile friendly"
-#' @url The Url you want to perform the test for.
-#' @APIToken Your API Token for this Google Project. Please use your own token if you perform a lot of calls.
+#' @param domain The Url you want to perform the test for.
+#' @param APIToken Your API Token for this Google Project. Please use your own token if you perform a lot of calls.
 #' mobileFriendly()
 
 

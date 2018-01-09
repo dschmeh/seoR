@@ -1,7 +1,7 @@
 #' Function to preform a W3C Validation Test for a specific URL
 #'
 #' This function allows you to perform a W3C Validation test for a given URL. You will get the number of Errors and Warnings for the URL as Data Frame.
-#' @url The url you want to perform the Validation for
+#' @param url The url you want to perform the Validation for
 #' w3cValidate()
 
 

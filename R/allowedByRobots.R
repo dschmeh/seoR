@@ -1,11 +1,12 @@
 #' Function to check if URL is blocked by robots.txt
 #'
 #' This function checks if a given URL is blocked by the robots.txt file of the website.
-#' @url The url you want to check
-#' @bot The bot you want to check the indexability with. Default is googlebot
+#' @param url The url you want to check
+#' @param bot The bot you want to check the indexability with. Default is googlebot
 #' allowedByRobots()
 
 allowedByRobots <- function(url, bot = "googlebot") {
+
   domain <-
     stringr::str_extract(
       url,

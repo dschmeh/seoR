@@ -1,8 +1,8 @@
 #' Function to calculate the internal PageRank of a crawled Page
 #'
 #' This function allows you to calculate the internal PageRank of a given Domain. The calculation is based on a ScreamingFrog Crawl and the export "all_outlinks.csv".
-#' @crawl The Path to your "all_outlinks.csv"-File
-#' @domain The function also analyzes outgoing links. If you want the results just for your domain. Specify it here.
+#' @param crawl The Path to your "all_outlinks.csv"-File
+#' @param domain The function also analyzes outgoing links. If you want the results just for your domain. Specify it here.
 #' screamingfrog_internalPagerank()
 
 screamingfrog_internalPagerank <- function(crawl, domain = NULL) {

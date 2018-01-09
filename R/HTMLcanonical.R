@@ -1,12 +1,13 @@
 #' Function to retrive the Canonical Link element for a given URL
 #'
 #' This function allows you to get the canonical Link element for a given URL.
-#' @url The URL you want to get the Canonical-Tag for
+#' @param url The URL you want to get the Canonical-Tag for
 #' HTMLcanonical()
 
 
 
 HTMLcanonical <- function(url) {
+
   can <- as.data.frame(try(url %>%
                              as.character() %>%
                              read_html() %>%

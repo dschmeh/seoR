@@ -1,9 +1,9 @@
 #' Function to retrive URL Metrics from Moz-API
 #'
 #' This function allows you to get the Moz URL Metrics. You need a API Key to retrieve this Data. You can generate one for free here: https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account At the Moment you just get the Data provided by a free Account.
-#' @page The page you want the data for
-#' @Access_ID Your Moz Access ID
-#' @Secret_Key Your Moz Secret Key
+#' @param page The page you want the data for
+#' @param Access_ID Your Moz Access ID
+#' @param Secret_Key Your Moz Secret Key
 #' mozUrlMetrics()
 
 mozUrlMetrics <- function(page, Access_ID, Secret_Key) {

@@ -1,12 +1,12 @@
 #' Function to retrive data from Google Suggest for a specific keyword
 #'
 #' This function allows you to get more longtail Keywords for a specific given Keyword. The Tool uses the Google Autocomplete function to retrieve this keywords.
-#' @keyword The initial keyword you want to get suggestions for
-#' @walkThrough logical Input. If TRUE the function adds every letter before and after the keyword to loop through the Google Autocomplete.
-#' @language The language you want to get suggestions. Default is en.
-#' @questions Logial. Checks for keywords with question-Phrases like "How much is beer"
-#' @prepositions Logial. Checks for keywords with prepositions-Phrases like "beer without alcohol"
-#' @comparisons Logial. Checks keywords with comparison phrase like "beer versus wine"
+#' @param keyword The initial keyword you want to get suggestions for
+#' @param walkThrough logical Input. If TRUE the function adds every letter before and after the keyword to loop through the Google Autocomplete.
+#' @param language The language you want to get suggestions. Default is en.
+#' @param questions Logial. Checks for keywords with question-Phrases like "How much is beer"
+#' @param prepositions Logial. Checks for keywords with prepositions-Phrases like "beer without alcohol"
+#' @param comparisons Logial. Checks keywords with comparison phrase like "beer versus wine"
 #' googleSuggest()
 
 googleSuggest <-
@@ -73,9 +73,9 @@ googleSuggest <-
         sug <- rbind(sug, s, ss)
       }
     }
-    
+
     #Check the Keywords with question words
-    
+
     if (isTRUE(questions)) {
       file <- paste0('~/seoR/data/questions_', language, '.csv')
       questions <- readr::read_csv(file,
@@ -98,9 +98,9 @@ googleSuggest <-
         sug <- rbind(sug, s)
       }
     }
-    
+
     #Check the Keywords with prepositions words
-    
+
     if (isTRUE(prepositions)) {
       file <- paste0('~/seoR/data/prepositions_', language, '.csv')
       prepositions <- readr::read_csv(file)
@@ -122,9 +122,9 @@ googleSuggest <-
         sug <- rbind(sug, s)
       }
     }
-    
+
     #Check the Keywords with comparisons words
-    
+
     if (isTRUE(comparisons)) {
       file <- paste0('~/seoR/data/comparisons_', language, '.csv')
       comparisons <- readr::read_csv(file)
@@ -146,6 +146,6 @@ googleSuggest <-
         sug <- rbind(sug, s)
       }
     }
-    
+
     return(unique(sug))
   }
