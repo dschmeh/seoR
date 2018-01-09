@@ -7,8 +7,10 @@
 pageSpeed(url, APIToken = "AIzaSyC1gUZEsqk-nny6f3KnJyTKuy30O6fpGCw")
 }
 \arguments{
-\item{url}{character. The url you want to check the indexability for.}
-\item{APIToken}{character. Your API Token for this Google Project. Please use your own token if you perform a lot of calls.}
+\item{url}{The Url you want to perform the test for.}
+
+\item{APIToken}{Your API Token for this Google Project. Please use your own token if you perform a lot of calls.
+pageSpeed()}
 }
 \description{
 This function allows you to retrive Data from Googles Pagespeed Testing API. The Function retrives the data (a numeric value between 0 and 100) for a given Url.

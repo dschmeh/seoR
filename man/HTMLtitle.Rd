@@ -7,7 +7,8 @@
 HTMLtitle(url)
 }
 \arguments{
-\item{url}{character. The url you want to check.}
+\item{url}{The URL you want to get the title for
+HTMLtitle()}
 }
 \description{
 This function allows you to get the title of a specific URL.

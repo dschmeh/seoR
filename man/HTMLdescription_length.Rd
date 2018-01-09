@@ -7,7 +7,8 @@
 HTMLdescription_length(url)
 }
 \arguments{
-\item{url}{character. The url you want to check.}
+\item{url}{The URL you want to get the description length for
+HTMLdescription_length()}
 }
 \description{
 This function allows you to get the number of characters in a Meta Description for a given URL.

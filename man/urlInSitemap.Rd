@@ -7,8 +7,10 @@
 urlInSitemap(url, sitemap)
 }
 \arguments{
-\item{url}{character. The URL you want to check}
-\item{sitemap}{character. The Link to the Sitemap you want to find the URL in}
+\item{url}{The URL you want to check}
+
+\item{sitemap}{The Link to the Sitemap you want to find the URL in
+urlInSitemap()}
 }
 \description{
 This function allows you to check if a given URL is found in a XML-Sitemap. For this you can also put in your Index-Sitemap.

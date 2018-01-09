@@ -7,7 +7,8 @@
 downloadSitemap(sitemap)
 }
 \arguments{
-\item{sitemap}{character. The sitemap you want to download.}
+\item{sitemap}{The Sitemap you want to download. This can also be a Index-Sitemap
+downloadSitemap()}
 }
 \description{
 This function allows to Download the Sitemap.xml of a given Webpage

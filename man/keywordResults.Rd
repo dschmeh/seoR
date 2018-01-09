@@ -7,8 +7,10 @@
 keywordResults(keyword, searchengine = "google")
 }
 \arguments{
-\item{keyword}{character. The keyword you want to get the number of results for.}
-\item{searchengine}{character. The Searchengine you want to get the results form. Even Google or Bing. Default is Google.}
+\item{keyword}{The keyword you want to get the number of results for}
+
+\item{searchengine}{The Searchengine you want to get the results form. Even Google or Bing. Default is Google.
+keywordResults()}
 }
 \description{
 This function allows you to get the number of Results for a given Keyword. You can get the value even from Google or Bing, by specifing this in the Call.

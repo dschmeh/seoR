@@ -7,8 +7,10 @@
 choice(choice, possible = "")
 }
 \arguments{
-\item{choice}{character.}
-\item{possible}{character.}
+\item{choice}{The choice you want to analyze}
+
+\item{possible}{What are good inputs?
+choice()}
 }
 \description{
 Check general choices

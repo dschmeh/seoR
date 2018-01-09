@@ -7,7 +7,8 @@
 url_with_http(url)
 }
 \arguments{
-\item{url}{character. The url-Input you want to check.}
+\item{url}{The URL you want to analyze
+url_with_http()}
 }
 \description{
 URL Input checks

@@ -7,8 +7,10 @@
 htag_count(url, hTag = "h1")
 }
 \arguments{
-\item{url}{character. The url you want to analyze.}
-\item{hTag}{character. The h-Tag you want to get as response.}
+\item{url}{The URL you want to get the H-Tags for}
+
+\item{hTag}{The H-Tags you want to get (exampale = h2-Tags). Default is H1
+htag_count()}
 }
 \description{
 This function allows you to get the number of H-Tags you specified in the Call for a given URL.

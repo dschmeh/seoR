@@ -7,8 +7,10 @@
 mobileFriendly(domain, APIToken = "AIzaSyC1gUZEsqk-nny6f3KnJyTKuy30O6fpGCw")
 }
 \arguments{
-\item{domain}{character. The domain you want to perform the test for.}
-\item{APIToken}{character. Your API Token for this Google Project. Please use your own token if you perform a lot of calls.}
+\item{domain}{The Url you want to perform the test for.}
+
+\item{APIToken}{Your API Token for this Google Project. Please use your own token if you perform a lot of calls.
+mobileFriendly()}
 }
 \description{
 This function allows you to retrive Data from Googles Mobile Friendly Test API. The Function retrives the data for a given Url. The API provides you a TRUE for "is mobile friendly" and FALSE for "is not mobile friendly"

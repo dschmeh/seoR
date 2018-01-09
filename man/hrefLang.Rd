@@ -7,7 +7,8 @@
 hrefLang(url)
 }
 \arguments{
-\item{url}{character. The url you want to analyze.}
+\item{url}{The URL you want to get the hrefLang-Tag for
+hrefLang()}
 }
 \description{
 This function allows you to get the hrefLang-Tags for a given URL. You get the Output as a Data Frame containing the Link and the Country/Language specififcation.

@@ -4,16 +4,22 @@
 \alias{googleSuggest}
 \title{Function to retrive data from Google Suggest for a specific keyword}
 \usage{
-googleSuggest(keyword, language = "en", walkThrough = FALSE, questions = FALSE, prepositions = FALSE, comparisons = FALSE)
+googleSuggest(keyword, language = "en", walkThrough = FALSE,
+  questions = FALSE, prepositions = FALSE, comparisons = FALSE)
 }
 \arguments{
-\item{keyword}{character. The initial keyword you want to get suggestions for.}
-\item{language}{character. The language you want to get suggestions. Default is en.}
-\item{walkThrough}{logical. If TRUE the function adds every letter before and after the
-keyword to loop through the Google Autocomplete.}
+\item{keyword}{The initial keyword you want to get suggestions for}
+
+\item{language}{The language you want to get suggestions. Default is en.}
+
+\item{walkThrough}{logical Input. If TRUE the function adds every letter before and after the keyword to loop through the Google Autocomplete.}
+
 \item{questions}{Logial. Checks for keywords with question-Phrases like "How much is beer"}
+
 \item{prepositions}{Logial. Checks for keywords with prepositions-Phrases like "beer without alcohol"}
-\item{comparisons}{Logial. Checks keywords with comparison phrase like "beer versus wine"}
+
+\item{comparisons}{Logial. Checks keywords with comparison phrase like "beer versus wine"
+googleSuggest()}
 }
 \description{
 This function allows you to get more longtail Keywords for a specific given Keyword. The Tool uses the Google Autocomplete function to retrieve this keywords.

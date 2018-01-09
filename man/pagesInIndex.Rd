@@ -7,7 +7,8 @@
 pagesInIndex(url)
 }
 \arguments{
-\item{url}{character. The url you want to check the indexability for.}
+\item{url}{The url you want to get the number of results for
+pagesInIndex()}
 }
 \description{
 This function allows you to get the number of indexed URLs for a given Domain or URL-String. The Function performs a Google-Site request to get´s the value.

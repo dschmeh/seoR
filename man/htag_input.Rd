@@ -7,7 +7,8 @@
 htag_input(h_tag)
 }
 \arguments{
-\item{h_tag}{character. The hTag you want to analyze.}
+\item{h_tag}{The h_tag you want to analyze
+htag_input()}
 }
 \description{
 Check h-Tag Input

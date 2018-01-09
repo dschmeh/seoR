@@ -7,7 +7,8 @@
 HTMLdescription(url)
 }
 \arguments{
-\item{url}{character. The url you want to check.}
+\item{url}{The URL you want to get the description for
+HTMLdescription()}
 }
 \description{
 This function allows you to get the Meta-Description of a specific URL.

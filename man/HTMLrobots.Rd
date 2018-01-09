@@ -7,7 +7,8 @@
 HTMLrobots(url)
 }
 \arguments{
-\item{url}{character. The url you want to check.}
+\item{url}{The URL you want to get the Meta Robots for
+HTMLrobots()}
 }
 \description{
 This function allows you to get the Meta Robots for a given URL.

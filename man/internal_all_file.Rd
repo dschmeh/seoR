@@ -7,7 +7,8 @@
 internal_all_file(input)
 }
 \arguments{
-\item{input}{character. The input ScreamingFrog-File.}
+\item{input}{The input you want to analyze
+internal_all_file()}
 }
 \description{
 Check Screaming-Frog Input Files

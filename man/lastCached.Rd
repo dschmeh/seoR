@@ -7,7 +7,8 @@
 lastCached(url)
 }
 \arguments{
-\item{url}{character. The url you want to analyze.}
+\item{url}{The url you want to get the Cache Date
+lastCached()}
 }
 \description{
 This function allows you to get the latest Google Cache Date for a given URL.

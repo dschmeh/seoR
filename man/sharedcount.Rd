@@ -7,8 +7,10 @@
 sharedcount(url, key)
 }
 \arguments{
-\item{url}{character. The URL you want to get the Data for.}
-\item{key}{character. Your API-Key you get from https://www.sharedcount.com/ for free.}
+\item{url}{The URL you want to analyze}
+
+\item{key}{Your API-Key you get from https://www.sharedcount.com/ fro free
+sharedcount()}
 }
 \description{
 This function allows to get the shares of a given Domain into R. Therefore the function uses the Sharedcount-API. To use the function you have to set up a free API-Account here: https://www.sharedcount.com/

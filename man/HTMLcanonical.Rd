@@ -7,7 +7,8 @@
 HTMLcanonical(url)
 }
 \arguments{
-\item{url}{character. The url you want to check.}
+\item{url}{The URL you want to get the Canonical-Tag for
+HTMLcanonical()}
 }
 \description{
 This function allows you to get the canonical Link element for a given URL.

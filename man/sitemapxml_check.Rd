@@ -7,7 +7,8 @@
 sitemapxml_check(sitemap)
 }
 \arguments{
-\item{sitemap}{character. The sitemapinput you want to check.}
+\item{sitemap}{The sitemap you want to analyze
+sitemapxml_check()}
 }
 \description{
 Check if the User provided a correct Sitemap.xml

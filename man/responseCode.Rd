@@ -7,7 +7,8 @@
 responseCode(url)
 }
 \arguments{
-\item{url}{character. The url you want to check the indexability for.}
+\item{url}{The URL you want to get the status Code for
+responseCode()}
 }
 \description{
 This function allows you to get the the status Code of a given URL

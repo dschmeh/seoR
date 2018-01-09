@@ -7,7 +7,8 @@
 host_tld(url)
 }
 \arguments{
-\item{url}{character. A url you want to check.}
+\item{url}{The URL you want to analyze
+host_tld()}
 }
 \description{
 Check if the User just provided the Hostname and TLD

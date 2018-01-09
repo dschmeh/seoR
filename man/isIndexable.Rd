@@ -7,9 +7,12 @@
 isIndexable(url, bot = "googlebot", errorType = TRUE)
 }
 \arguments{
-\item{url}{character. The url you want to check the indexability for.}
-\item{bot}{character. The bot you want to check the indexability with. Default is googlebot}
-\item{errorType}{logical. Retrieves the Error, why the URL can´t be indexed. Attention not all rules at once are displayed.}
+\item{url}{The url you want to check the indexability for}
+
+\item{bot}{The bot you want to check the indexability with. Default is googlebot}
+
+\item{errorType}{Logical. Retrieves the Error, why the URL can´t be indexed. Attention not all rules at once are displayed.
+isIndexable()}
 }
 \description{
 This function checks if a given URL is indexable. Therfore it checks different rules:
