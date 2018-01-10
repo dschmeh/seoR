@@ -3,6 +3,8 @@
 #' This function allows to Download the Sitemap.xml of a given Webpage
 #' @param sitemap The Sitemap you want to download. This can also be a Index-Sitemap
 #' downloadSitemap()
+#' @examples
+#' downloadSitemap("http://ohren-reinigen.de/sitemap.xml")
 
 downloadSitemap <- function(sitemap) {
   #Input check

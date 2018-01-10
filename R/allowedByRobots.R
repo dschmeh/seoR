@@ -4,6 +4,8 @@
 #' @param url The url you want to check
 #' @param bot The bot you want to check the indexability with. Default is googlebot
 #' allowedByRobots()
+#' @examples
+#' allowedByRobots("https://www.r-project.org/", bot = "googlebot")
 
 allowedByRobots <- function(url, bot = "googlebot") {
 

@@ -3,7 +3,8 @@
 #' This function allows you to get the number of indexed URLs for a given Domain or URL-String. The Function performs a Google-Site request to get´s the value.
 #' @param url The url you want to get the number of results for
 #' pagesInIndex()
-
+#' @examples
+#' pagesInIndex("https://www.r-project.org/")
 
 
 pagesInIndex <- function(url) {

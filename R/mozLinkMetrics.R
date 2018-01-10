@@ -12,6 +12,13 @@
 #' @param TargetCols  is a bit flag: a numerical value specifying which data to include about the target URL.
 #' @param LinkCols is a bit flag: a numerical value specifying which data to include about the link itself (for example, if the link is nofollowed).
 #' mozLinkMetrics()
+#' @examples
+#' \dontrun{
+#' page<-"https://www.r-project.org/"
+#' Access_ID<-{{YOUR_ACCESS_ID}}
+#' Secret_Key<-{{YOUR_SECRET_KEY}}
+#' mozLinkMetrics(page, Access_ID, Secret_Key, Scope = "page_to_page", Limit = 1, Filter = "",Sort = "",SourceCols = "536870916",TargetCols = "536870916", LinkCols = "")
+#' }
 
 
 mozLinkMetrics <-

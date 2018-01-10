@@ -3,6 +3,8 @@
 #' This function allows you to get the number of characters in a Meta Description for a given URL.
 #' @param url The URL you want to get the description length for
 #' HTMLdescription_length()
+#' @examples
+#' HTMLdescription_length("https://www.r-project.org/")
 
 HTMLdescription_length <- function(url) {
   des <- try(url %>%

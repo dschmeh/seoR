@@ -8,6 +8,8 @@
 #' @param prepositions Logial. Checks for keywords with prepositions-Phrases like "beer without alcohol"
 #' @param comparisons Logial. Checks keywords with comparison phrase like "beer versus wine"
 #' googleSuggest()
+#' @examples
+#' googleSuggest("R Project", language = "en", walkThrough = FALSE)
 
 googleSuggest <-
   function(keyword,

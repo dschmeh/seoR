@@ -3,7 +3,8 @@
 #' This function allows you to get the number of characters in a Title-Tag for a given URL.
 #' @param url The URL you want to get the title length for
 #' HTMLtitle_length()
-
+#' @examples
+#' HTMLtitle_length("https://www.r-project.org/")
 
 HTMLtitle_length <- function(url) {
 

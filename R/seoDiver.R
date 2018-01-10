@@ -4,6 +4,8 @@
 #' @param url The URL you want to get the Data for
 #' @param type The type of Data you want to get. Possible Inputs are: "Suchreichweite", "Suchwahrnehmung" and "Statische Sichtbarkeit"
 #' seoDiver()
+#' @examples
+#' seoDiver("r-project.org", type = "Suchreichweite")
 
 seoDiver <- function(url, type = "Suchreichweite") {
   url <- gsub("https://|http://", "", url)

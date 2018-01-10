@@ -3,7 +3,8 @@
 #' This function allows you to perform a W3C Validation test for a given URL. You will get the number of Errors and Warnings for the URL as Data Frame.
 #' @param url The url you want to perform the Validation for
 #' w3cValidate()
-
+#' @examples
+#' w3cValidate("https://www.r-project.org/")
 
 w3cValidate <- function(url) {
   w3c <-

@@ -4,14 +4,15 @@
 #' @param keyword The keyword you want to get the number of results for
 #' @param searchengine The Searchengine you want to get the results form. Even Google or Bing. Default is Google.
 #' keywordResults()
-
+#' @examples
+#' keywordResults("R Project", searchengine = "google")
 
 
 keywordResults <- function(keyword, searchengine = "google") {
 
   #SE Input error Handling missing
   if (searchengine == "google") {
-    url <- paste0("https://www.google.com/search?q=", keyword)
+    url <- paste0("https://www.google.com/search?q=", gsub(" ","+",keyword))
     res <- try(url %>%
                  as.character() %>%
                  read_html() %>%

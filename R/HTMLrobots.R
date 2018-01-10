@@ -3,7 +3,8 @@
 #' This function allows you to get the Meta Robots for a given URL.
 #' @param url The URL you want to get the Meta Robots for
 #' HTMLrobots()
-
+#' @examples
+#' HTMLrobots("https://www.r-project.org/")
 
 
 HTMLrobots <- function(url) {

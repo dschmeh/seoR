@@ -3,7 +3,8 @@
 #' This function allows you to get the canonical Link element for a given URL.
 #' @param url The URL you want to get the Canonical-Tag for
 #' HTMLcanonical()
-
+#' @examples
+#' HTMLcanonical("https://www.r-project.org/")
 
 
 HTMLcanonical <- function(url) {

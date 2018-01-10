@@ -4,7 +4,12 @@
 #' @param url The URL you want to analyze
 #' @param key Your API-Key you get from https://www.sharedcount.com/ fro free
 #' sharedcount()
-
+#' @examples
+#' \dontrun{
+#' url<-"https://www.r-project.org/"
+#' key<-{{YOUR_API_KEY}}
+#' sharedcount(url, key)
+#' }
 
 sharedcount <- function(url, key) {
   if (isTRUE(url_with_http(url))) {

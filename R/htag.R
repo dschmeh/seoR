@@ -4,7 +4,8 @@
 #' @param url The URL you want to get the H-Tags for
 #' @param hTag The H-Tags you want to get (exampale = h2-Tags). Default is H1
 #' htag()
-
+#' @examples
+#' htag("https://www.r-project.org/", hTag = "h1")
 
 
 htag <- function(url, hTag = "h1") {

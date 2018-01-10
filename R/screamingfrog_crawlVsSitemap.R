@@ -8,6 +8,7 @@
 #' screamingfrog_crawlVsSitemap()
 
 
+
 screamingfrog_crawlVsSitemap <-
   function(crawl,
            sitemap,

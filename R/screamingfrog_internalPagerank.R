@@ -5,6 +5,8 @@
 #' @param domain The function also analyzes outgoing links. If you want the results just for your domain. Specify it here.
 #' screamingfrog_internalPagerank()
 
+
+
 screamingfrog_internalPagerank <- function(crawl, domain = NULL) {
   sc_crawl <- read.csv(crawl, skip = 1)
   sc_crawl <- subset(sc_crawl, Type == "AHREF")

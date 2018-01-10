@@ -5,6 +5,13 @@
 #' @param Access_ID Your Moz Access ID
 #' @param Secret_Key Your Moz Secret Key
 #' mozUrlMetrics()
+#' @examples
+#' \dontrun{
+#' page<-"https://www.r-project.org/"
+#' Access_ID<-{{YOUR_ACCESS_ID}}
+#' Secret_Key<-{{YOUR_SECRET_KEY}}
+#' mozUrlMetrics(page, Access_ID, Secret_Key)
+#' }
 
 mozUrlMetrics <- function(page, Access_ID, Secret_Key) {
   #TODO: Add the possibility to specific Cols

@@ -3,7 +3,8 @@
 #' This function allows you to get the title of a specific URL.
 #' @param url The URL you want to get the title for
 #' HTMLtitle()
-
+#' @examples
+#' HTMLtitle("https://www.r-project.org/")
 
 HTMLtitle <- function(url) {
 

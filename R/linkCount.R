@@ -5,6 +5,8 @@
 #' @param linkType The LinkType you want to analyze. All Links, Just Internal Links or Links to other Domains (external). You can specify "all","external" and "internal". Default is "all"
 #' @param uniqueLinks Logical. Count unique Links as one is TRUE. Default is FALSE
 #' linkCount()
+#' @examples
+#' linkCount("https://www.r-project.org/", linkType = "all", uniqueLinks = FALSE)
 
 
 

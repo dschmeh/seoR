@@ -3,7 +3,8 @@
 #' This function allows you to get the latest Google Cache Date for a given URL.
 #' @param url The url you want to get the Cache Date
 #' lastCached()
-
+#' @examples
+#' lastCached("https://www.r-project.org/")
 
 lastCached <- function(url) {
 

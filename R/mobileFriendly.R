@@ -4,7 +4,8 @@
 #' @param domain The Url you want to perform the test for.
 #' @param APIToken Your API Token for this Google Project. Please use your own token if you perform a lot of calls.
 #' mobileFriendly()
-
+#' @examples
+#' mobileFriendly("https://www.r-project.org/")
 
 
 mobileFriendly <-

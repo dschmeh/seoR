@@ -5,7 +5,8 @@
 #' @param linkType The LinkType you want to analyze. All Links, Just Internal Links or Links to other Domains (external). You can specify "all","external" and "internal". Default is "all"
 #' @param uniqueLinks Logical. Extract unique Links as one is TRUE. Default is FALSE
 #' extractLinks()
-
+#' @examples
+#' extractLinks("https://www.r-project.org/", uniqueLinks = FALSE)
 
 
 extractLinks <-

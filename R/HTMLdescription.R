@@ -3,7 +3,8 @@
 #' This function allows you to get the Meta-Description of a specific URL.
 #' @param url The URL you want to get the description for
 #' HTMLdescription()
-
+#' @examples
+#' HTMLdescription("https://www.r-project.org/")
 
 HTMLdescription <- function(url) {
 
