@@ -15,3 +15,6 @@ keywordResults()}
 \description{
 This function allows you to get the number of Results for a given Keyword. You can get the value even from Google or Bing, by specifing this in the Call.
 }
+\examples{
+keywordResults("R Project", searchengine = "google")
+}

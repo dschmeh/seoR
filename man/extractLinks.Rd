@@ -17,3 +17,6 @@ extractLinks()}
 \description{
 This function allows you to extract all links of a given URL. You can specify if you just want unique Links or all. The output is a Data Frame.
 }
+\examples{
+extractLinks("https://www.r-project.org/", uniqueLinks = FALSE)
+}

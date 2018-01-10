@@ -13,3 +13,6 @@ responseCode()}
 \description{
 This function allows you to get the the status Code of a given URL
 }
+\examples{
+responseCode("https://www.r-project.org/")
+}

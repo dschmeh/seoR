@@ -13,3 +13,6 @@ hrefLang()}
 \description{
 This function allows you to get the hrefLang-Tags for a given URL. You get the Output as a Data Frame containing the Link and the Country/Language specififcation.
 }
+\examples{
+hrefLang("https://www.r-project.org/")
+}

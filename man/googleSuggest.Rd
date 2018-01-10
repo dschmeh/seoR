@@ -24,3 +24,6 @@ googleSuggest()}
 \description{
 This function allows you to get more longtail Keywords for a specific given Keyword. The Tool uses the Google Autocomplete function to retrieve this keywords.
 }
+\examples{
+googleSuggest("R Project", language = "en", walkThrough = FALSE)
+}

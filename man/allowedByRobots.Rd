@@ -15,3 +15,6 @@ allowedByRobots()}
 \description{
 This function checks if a given URL is blocked by the robots.txt file of the website.
 }
+\examples{
+allowedByRobots("https://www.r-project.org/", bot = "googlebot")
+}

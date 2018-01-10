@@ -17,3 +17,11 @@ mozUrlMetrics()}
 \description{
 This function allows you to get the Moz URL Metrics. You need a API Key to retrieve this Data. You can generate one for free here: https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account At the Moment you just get the Data provided by a free Account.
 }
+\examples{
+\dontrun{
+page<-"https://www.r-project.org/"
+Access_ID<-{{YOUR_ACCESS_ID}}
+Secret_Key<-{{YOUR_SECRET_KEY}}
+mozUrlMetrics(page, Access_ID, Secret_Key)
+}
+}

@@ -4,14 +4,24 @@
 \alias{pageSpeed}
 \title{Function to retrieve Data from Googles Pagespeed Testing API}
 \usage{
-pageSpeed(url, APIToken = "AIzaSyC1gUZEsqk-nny6f3KnJyTKuy30O6fpGCw")
+pageSpeed(url, APIToken = "AIzaSyC1gUZEsqk-nny6f3KnJyTKuy30O6fpGCw",
+  strategy = "mobile", pageStats = FALSE, speedScore = FALSE)
 }
 \arguments{
 \item{url}{The Url you want to perform the test for.}
 
-\item{APIToken}{Your API Token for this Google Project. Please use your own token if you perform a lot of calls.
+\item{APIToken}{Your API Token for this Google Project. Please use your own token if you perform a lot of calls.}
+
+\item{strategy}{Character. Choose if you want to get the data for "mobile" or "desktop"}
+
+\item{pageStats}{Logical. Do you want to get the Pagestats from the API? Default is TRUE}
+
+\item{speedScore}{Logical. If TRUE you just get the Pagespeed Score Number. Default is FALSE
 pageSpeed()}
 }
 \description{
 This function allows you to retrive Data from Googles Pagespeed Testing API. The Function retrives the data (a numeric value between 0 and 100) for a given Url.
+}
+\examples{
+pageSpeed("https://www.r-project.org/")
 }

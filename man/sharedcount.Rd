@@ -15,3 +15,10 @@ sharedcount()}
 \description{
 This function allows to get the shares of a given Domain into R. Therefore the function uses the Sharedcount-API. To use the function you have to set up a free API-Account here: https://www.sharedcount.com/
 }
+\examples{
+\dontrun{
+url<-"https://www.r-project.org/"
+key<-{{YOUR_API_KEY}}
+sharedcount(url, key)
+}
+}

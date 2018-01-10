@@ -13,3 +13,6 @@ HTMLrobots()}
 \description{
 This function allows you to get the Meta Robots for a given URL.
 }
+\examples{
+HTMLrobots("https://www.r-project.org/")
+}

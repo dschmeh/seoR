@@ -15,3 +15,6 @@ htag()}
 \description{
 This function allows you to get the H-Tags you specified in the Call of a given URL. The function returns the H-Tags as Data Frame.
 }
+\examples{
+htag("https://www.r-project.org/", hTag = "h1")
+}

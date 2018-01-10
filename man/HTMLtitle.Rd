@@ -13,3 +13,6 @@ HTMLtitle()}
 \description{
 This function allows you to get the title of a specific URL.
 }
+\examples{
+HTMLtitle("https://www.r-project.org/")
+}

@@ -17,3 +17,6 @@ linkCount()}
 \description{
 This function allows you to get the number of outgoing links for a given URL.You can specify if you want to count same Links as one or not.
 }
+\examples{
+linkCount("https://www.r-project.org/", linkType = "all", uniqueLinks = FALSE)
+}

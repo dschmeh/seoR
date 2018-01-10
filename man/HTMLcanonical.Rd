@@ -13,3 +13,6 @@ HTMLcanonical()}
 \description{
 This function allows you to get the canonical Link element for a given URL.
 }
+\examples{
+HTMLcanonical("https://www.r-project.org/")
+}

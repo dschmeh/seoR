@@ -13,3 +13,6 @@ HTMLdescription()}
 \description{
 This function allows you to get the Meta-Description of a specific URL.
 }
+\examples{
+HTMLdescription("https://www.r-project.org/")
+}

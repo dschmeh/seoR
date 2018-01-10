@@ -13,3 +13,6 @@ HTMLtitle_length()}
 \description{
 This function allows you to get the number of characters in a Title-Tag for a given URL.
 }
+\examples{
+HTMLtitle_length("https://www.r-project.org/")
+}

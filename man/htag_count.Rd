@@ -15,3 +15,6 @@ htag_count()}
 \description{
 This function allows you to get the number of H-Tags you specified in the Call for a given URL.
 }
+\examples{
+htag_count("https://www.r-project.org/", hTag = "h3")
+}

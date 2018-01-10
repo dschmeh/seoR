@@ -33,3 +33,11 @@ mozLinkMetrics()}
 \description{
 This function allows you to get the Moz Link Metrics. You need a API Key to retrieve this Data. You can generate one for free here: https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account At the Moment you just get the Data provided by a free Account.
 }
+\examples{
+\dontrun{
+page<-"https://www.r-project.org/"
+Access_ID<-{{YOUR_ACCESS_ID}}
+Secret_Key<-{{YOUR_SECRET_KEY}}
+mozLinkMetrics(page, Access_ID, Secret_Key, Scope = "page_to_page", Limit = 1, Filter = "",Sort = "",SourceCols = "536870916",TargetCols = "536870916", LinkCols = "")
+}
+}

@@ -13,3 +13,6 @@ downloadSitemap()}
 \description{
 This function allows to Download the Sitemap.xml of a given Webpage
 }
+\examples{
+downloadSitemap("http://ohren-reinigen.de/sitemap.xml")
+}

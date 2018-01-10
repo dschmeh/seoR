@@ -13,3 +13,6 @@ domainAge()}
 \description{
 This function allows you to get the Do´main Age for a given Domain. (Attention:At the moment just possible with .com-Domains)
 }
+\examples{
+domainAge("https://amazon.com")
+}

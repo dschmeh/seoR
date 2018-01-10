@@ -13,3 +13,6 @@ w3cValidate()}
 \description{
 This function allows you to perform a W3C Validation test for a given URL. You will get the number of Errors and Warnings for the URL as Data Frame.
 }
+\examples{
+w3cValidate("https://www.r-project.org/")
+}

@@ -13,3 +13,6 @@ HTMLdescription_length()}
 \description{
 This function allows you to get the number of characters in a Meta Description for a given URL.
 }
+\examples{
+HTMLdescription_length("https://www.r-project.org/")
+}

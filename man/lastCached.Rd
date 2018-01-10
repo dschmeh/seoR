@@ -13,3 +13,6 @@ lastCached()}
 \description{
 This function allows you to get the latest Google Cache Date for a given URL.
 }
+\examples{
+lastCached("https://www.r-project.org/")
+}

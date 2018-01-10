@@ -21,3 +21,6 @@ Canonical-Link: Is the canonical Link Element implementet, so the URL can be ind
 Meta-Robots: Is the Meta-Robots blocking the ULR?
 robots.txt: Is the robots.txt blocking the URL from crawling?
 }
+\examples{
+isIndexable("https://www.r-project.org/", bot = "googlebot", errorType = TRUE)
+}
