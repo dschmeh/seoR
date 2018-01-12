@@ -66,7 +66,7 @@ mozLinkMetrics <-
         "&Expires=",
         timestamp,
         "&Signature=",
-        URLencode(digest::base64(
+        URLencode(RCurl::base64(
           hmac(Secret_Key, paste0(Access_ID, '\n', timestamp), "sha1", raw = TRUE)
         ), reserved = TRUE)
       )
