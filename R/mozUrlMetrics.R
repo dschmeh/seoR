@@ -26,7 +26,7 @@ mozUrlMetrics <- function(page, Access_ID, Secret_Key) {
       "&Expires=",
       timestamp,
       "&Signature=",
-      URLencode(digest::base64(
+      URLencode(digest::RCurl(
         hmac(Secret_Key, paste0(Access_ID, '\n', timestamp), "sha1", raw = TRUE)
       ), reserved = TRUE)
     )
