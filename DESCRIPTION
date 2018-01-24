@@ -1,26 +1,28 @@
 Package: seoR
 Type: Package
-Title: The Package provides various function to get Informations relevant for SEO related analyzes in R.
+Title: Various functions for SEO related analyzes in R
 Version: 0.1.0
 Author: Daniel Schmeh
 Maintainer: Daniel Schmeh <danielschmeh@gmail.com>
-Description: The Goal of this package is to provide various functions to help SEOs retrive relevant Informations from various APIs oder Websites in R. 
-        It´s possible to scrape SEO-relevant parts of a Website. So you are able to extract Links, Meta-Tags, H-Tags, and many more.
+Description: The Goal of this package is to provide various functions to help SEOs retrive relevant Informations from various APIs or Websites in R. 
+        It is possible to scrape SEO-relevant parts of a Website. So you are able to extract Links, Meta-Tags, H-Tags, and many more.
         The package also provides functions to scrape informations form search engines. Like Indexed Pages, number of results for a given Keyword.
         The third part of the Package are the SEO-Tool APIs, that are connected. It´s possible to get Informations from Whois, Google Pagespeed and many more direct in the R Console.
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1.9000
-Depends:
+Imports:
     jsonlite,
     httr,
     rvest,
     stringr,
-    magrittr,
     XML,
     robotstxt,
     igraph,
-    digest,
+    RCurl,
     dplyr,
-    readr
+    readr,
+    digest,
+    xml2,
+    utils
