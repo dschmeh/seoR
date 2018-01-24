@@ -14,5 +14,7 @@ HTMLcanonical()}
 This function allows you to get the canonical Link element for a given URL.
 }
 \examples{
+\dontrun{
 HTMLcanonical("https://www.r-project.org/")
+}
 }

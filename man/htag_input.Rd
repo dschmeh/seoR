@@ -7,9 +7,10 @@
 htag_input(h_tag)
 }
 \arguments{
-\item{h_tag}{The h_tag you want to analyze
-htag_input()}
+\item{h_tag}{The h_tag you want to analyze}
 }
 \description{
 Check h-Tag Input
 }
+\keyword{htag_input()}
+\keyword{internal.}

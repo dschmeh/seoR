@@ -7,9 +7,10 @@
 host_tld(url)
 }
 \arguments{
-\item{url}{The URL you want to analyze
-host_tld()}
+\item{url}{The URL you want to analyze}
 }
 \description{
 Check if the User just provided the Hostname and TLD
 }
+\keyword{host_tld()}
+\keyword{internal.}

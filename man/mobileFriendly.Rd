@@ -16,5 +16,7 @@ mobileFriendly()}
 This function allows you to retrive Data from Googles Mobile Friendly Test API. The Function retrives the data for a given Url. The API provides you a TRUE for "is mobile friendly" and FALSE for "is not mobile friendly"
 }
 \examples{
+\dontrun{
 mobileFriendly("https://www.r-project.org/")
+}
 }

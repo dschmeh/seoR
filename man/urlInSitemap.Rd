@@ -16,5 +16,5 @@ urlInSitemap()}
 This function allows you to check if a given URL is found in a XML-Sitemap. For this you can also put in your Index-Sitemap.
 }
 \examples{
-urlInSitemap("http://ohren-reinigen.de/ohren-reinigen/ohren-reinigen-bei-haustieren/", "http://ohren-reinigen.de/sitemap.xml")
+urlInSitemap("http://ohren-reinigen.de/", "http://ohren-reinigen.de/sitemap.xml")
 }

@@ -7,9 +7,10 @@
 internal_all_file(input)
 }
 \arguments{
-\item{input}{The input you want to analyze
-internal_all_file()}
+\item{input}{The input you want to analyze}
 }
 \description{
 Check Screaming-Frog Input Files
 }
+\keyword{internal.}
+\keyword{internal_all_file()}

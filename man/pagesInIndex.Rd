@@ -11,7 +11,7 @@ pagesInIndex(url)
 pagesInIndex()}
 }
 \description{
-This function allows you to get the number of indexed URLs for a given Domain or URL-String. The Function performs a Google-Site request to get´s the value.
+This function allows you to get the number of indexed URLs for a given Domain or URL-String. The Function performs a Google-Site request to gets the value.
 }
 \examples{
 pagesInIndex("https://www.r-project.org/")

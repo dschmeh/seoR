@@ -7,9 +7,10 @@
 sitemapxml_check(sitemap)
 }
 \arguments{
-\item{sitemap}{The sitemap you want to analyze
-sitemapxml_check()}
+\item{sitemap}{The sitemap you want to analyze}
 }
 \description{
 Check if the User provided a correct Sitemap.xml
 }
+\keyword{internal.}
+\keyword{sitemapxml_check()}

@@ -7,9 +7,10 @@
 url_with_http(url)
 }
 \arguments{
-\item{url}{The URL you want to analyze
-url_with_http()}
+\item{url}{The URL you want to analyze}
 }
 \description{
 URL Input checks
 }
+\keyword{internal.}
+\keyword{url_with_http()}
