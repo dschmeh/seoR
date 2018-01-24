@@ -5,7 +5,7 @@
 #' @param sitemap The Link to the Sitemap you want to find the URL in
 #' urlInSitemap()
 #' @examples
-#' urlInSitemap("http://ohren-reinigen.de/ohren-reinigen/ohren-reinigen-bei-haustieren/", "http://ohren-reinigen.de/sitemap.xml")
+#' urlInSitemap("http://ohren-reinigen.de/", "http://ohren-reinigen.de/sitemap.xml")
 
 urlInSitemap <- function(url, sitemap) {
   s <- XML::xmlToDataFrame(sitemap)

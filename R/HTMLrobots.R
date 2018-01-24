@@ -10,7 +10,7 @@
 HTMLrobots <- function(url) {
   try(url %>%
         as.character() %>%
-        read_html() %>%
+        xml2::read_html() %>%
         html_nodes("meta[name=robots]") %>%
         html_attr("content"))
 }

@@ -7,7 +7,7 @@
 #' robots.txt: Is the robots.txt blocking the URL from crawling?
 #' @param url The url you want to check the indexability for
 #' @param bot The bot you want to check the indexability with. Default is googlebot
-#' @param errorType Logical. Retrieves the Error, why the URL can´t be indexed. Attention not all rules at once are displayed.
+#' @param errorType Logical. Retrieves the Error, why the URL can not be indexed. Attention not all rules at once are displayed.
 #' isIndexable()
 #' @examples
 #' isIndexable("https://www.r-project.org/", bot = "googlebot", errorType = TRUE)

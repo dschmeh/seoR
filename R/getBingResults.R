@@ -12,25 +12,25 @@ getBingResults <- function (keyword, results = 10) {
     warning("10 results are the Limit")
     results <- 10
   }
-  
+
   y <-
     xml2::read_html(paste0('http://www.bing.com/search?q=',
                            gsub(" ", "+", keyword)))
   descriptions <-
-    head(as.data.frame(
+    utils::head(as.data.frame(
       y %>% rvest::html_nodes(".b_algo .b_caption p") %>% rvest::html_text()
     ),
     results)
   title <-
-    head(as.data.frame(y %>% rvest::html_nodes(".b_algo h2") %>% rvest::html_text()),
+    utils::head(as.data.frame(y %>% rvest::html_nodes(".b_algo h2") %>% rvest::html_text()),
          results)
   url <-
-    head(as.data.frame(
+    utils::head(as.data.frame(
       y %>% rvest::html_nodes(".b_algo cite") %>% rvest::html_text()
     ),
     results)
   landingPage <-
-    head(as.data.frame(
+    utils::head(as.data.frame(
       y %>% rvest::html_nodes(".b_algo h2 a") %>% rvest::html_attr('href')
     ),
     results)

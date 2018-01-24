@@ -4,14 +4,16 @@
 #' @param url The URL you want to get the Canonical-Tag for
 #' HTMLcanonical()
 #' @examples
+#' \dontrun{
 #' HTMLcanonical("https://www.r-project.org/")
+#' }
 
 
 HTMLcanonical <- function(url) {
 
   can <- as.data.frame(try(url %>%
                              as.character() %>%
-                             read_html() %>%
+                             xml2::read_html() %>%
                              stringr::str_extract('rel="canonical" href=.*'))
   )
   if (is.na(can[1, 1])) {

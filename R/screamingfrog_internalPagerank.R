@@ -9,6 +9,8 @@
 
 screamingfrog_internalPagerank <- function(crawl, domain = NULL) {
   sc_crawl <- read.csv(crawl, skip = 1)
+  Type<-NULL;
+  Follow<-NULL;
   sc_crawl <- subset(sc_crawl, Type == "AHREF")
   sc_crawl <- subset(sc_crawl, Follow == "true")
   sc_crawl <-
@@ -16,7 +18,7 @@ screamingfrog_internalPagerank <- function(crawl, domain = NULL) {
       as.character(sc_crawl$Source),
       as.character(sc_crawl$Destination)
     ))
-  sc_pr <- igraph::page.rank(sc_crawl, "prpack", vids = V(sc_crawl))
+  sc_pr <- igraph::page.rank(sc_crawl, "prpack", vids = igraph::V(sc_crawl))
   sc_pr <- as.data.frame(sc_pr$vector)
   sc_pr$URL <- rownames(sc_pr)
   row.names(sc_pr) <- NULL

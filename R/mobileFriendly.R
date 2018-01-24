@@ -5,7 +5,9 @@
 #' @param APIToken Your API Token for this Google Project. Please use your own token if you perform a lot of calls.
 #' mobileFriendly()
 #' @examples
+#' \dontrun{
 #' mobileFriendly("https://www.r-project.org/")
+#' }
 
 
 mobileFriendly <-

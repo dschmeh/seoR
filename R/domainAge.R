@@ -1,10 +1,12 @@
 #' Function to retrieve the Age of a given Domain
 #'
-#' This function allows you to get the Do´main Age for a given Domain. (Attention:At the moment just possible with .com-Domains)
+#' This function allows you to get the Domain Age for a given Domain. (Attention:At the moment just possible with .com-Domains)
 #' @param domain The domain you want to get the age for.
 #' domainAge()
 #' @examples
+#' \dontrun{
 #' domainAge("https://amazon.com")
+#' }
 
 
 

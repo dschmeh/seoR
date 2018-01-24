@@ -11,7 +11,7 @@ hrefLang <- function(url) {
 
   lang <- try(url %>%
                 as.character() %>%
-                read_html() %>%
+                xml2::read_html() %>%
                 stringr::str_extract_all("(.href\\=..*. hreflang\\=..*.| hreflang\\=..*..href\\=..*.)"))
   if (nrow(as.data.frame(unlist(lang))) == 0) {
     return("No hrefLang-Tag")

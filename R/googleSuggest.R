@@ -27,7 +27,7 @@ googleSuggest <-
       stop("The walkThrough should be a logical input")
     }
     keyword <- gsub(" ", "+", keyword)
-    key <- read_html(
+    key <- xml2::read_html(
       paste0(
         "http://suggestqueries.google.com/complete/search?output=toolbar&hl=",
         language,
@@ -45,7 +45,7 @@ googleSuggest <-
       alphabet <- as.data.frame(c(letters))
       for (i in 1:nrow(alphabet)) {
         #query with alphabte after keyword
-        key <- read_html(
+        key <- xml2::read_html(
           paste0(
             "http://suggestqueries.google.com/complete/search?output=toolbar&hl=",
             language,
@@ -59,7 +59,7 @@ googleSuggest <-
         s <- as.data.frame(s)
         colnames(s) <- "keyword_suggestions"
         #query with alphabte before keyword
-        key <- read_html(
+        key <- xml2::read_html(
           paste0(
             "http://suggestqueries.google.com/complete/search?output=toolbar&hl=",
             language,
@@ -79,12 +79,12 @@ googleSuggest <-
     #Check the Keywords with question words
 
     if (isTRUE(questions)) {
-      file <- paste0('~/seoR/data/questions_', language, '.csv')
+      file <- paste0('~/seoR/data-raw/questions_', language, '.csv')
       questions <- readr::read_csv(file,
                                    col_names = FALSE)
       for (i in 1:nrow(questions)) {
         #query with question keyword
-        key <- read_html(
+        key <- xml2::read_html(
           paste0(
             "http://suggestqueries.google.com/complete/search?output=toolbar&hl=",
             language,
@@ -104,11 +104,11 @@ googleSuggest <-
     #Check the Keywords with prepositions words
 
     if (isTRUE(prepositions)) {
-      file <- paste0('~/seoR/data/prepositions_', language, '.csv')
+      file <- paste0('~/seoR/data-raw/prepositions_', language, '.csv')
       prepositions <- readr::read_csv(file)
       for (i in 1:nrow(prepositions)) {
         #query with prepositions keyword
-        key <- read_html(
+        key <- xml2::read_html(
           paste0(
             "http://suggestqueries.google.com/complete/search?output=toolbar&hl=",
             language,
@@ -116,7 +116,7 @@ googleSuggest <-
             gsub(" ", "+", paste0(keyword, "+", prepositions[i, 1]))
           )
         )
-        s <- xml_find_all(key, "//suggestion")
+        s <- xml2::xml_find_all(key, "//suggestion")
         s <- gsub('<suggestion data="', "", s)
         s <- gsub('"></suggestion>', "", s)
         s <- as.data.frame(s)
@@ -128,11 +128,11 @@ googleSuggest <-
     #Check the Keywords with comparisons words
 
     if (isTRUE(comparisons)) {
-      file <- paste0('~/seoR/data/comparisons_', language, '.csv')
+      file <- paste0('~/seoR/data-raw/comparisons_', language, '.csv')
       comparisons <- readr::read_csv(file)
       for (i in 1:nrow(comparisons)) {
         #query with comparisons keyword
-        key <- read_html(
+        key <- xml2::read_html(
           paste0(
             "http://suggestqueries.google.com/complete/search?output=toolbar&hl=",
             language,

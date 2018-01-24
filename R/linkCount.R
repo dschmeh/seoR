@@ -21,7 +21,7 @@ linkCount <- function(url,
     )
   links <- try(as.data.frame(url %>%
                                as.character() %>%
-                               read_html() %>%
+                               xml2::read_html() %>%
                                html_nodes("a") %>%
                                html_attr("href")))
   colnames(links)[1] <- "links"

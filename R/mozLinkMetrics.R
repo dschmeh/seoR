@@ -17,7 +17,7 @@
 #' page<-"https://www.r-project.org/"
 #' Access_ID<-{{YOUR_ACCESS_ID}}
 #' Secret_Key<-{{YOUR_SECRET_KEY}}
-#' mozLinkMetrics(page, Access_ID, Secret_Key, Scope = "page_to_page", Limit = 1, Filter = "",Sort = "",SourceCols = "536870916",TargetCols = "536870916", LinkCols = "")
+#' mozLinkMetrics(page, Access_ID, Secret_Key)
 #' }
 
 
@@ -67,7 +67,7 @@ mozLinkMetrics <-
         timestamp,
         "&Signature=",
         URLencode(RCurl::base64(
-          hmac(Secret_Key, paste0(Access_ID, '\n', timestamp), "sha1", raw = TRUE)
+          digest::hmac(Secret_Key, paste0(Access_ID, '\n', timestamp), "sha1", raw = TRUE)
         ), reserved = TRUE)
       )
     res <- jsonlite::fromJSON(moz_call)

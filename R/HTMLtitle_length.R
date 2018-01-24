@@ -10,7 +10,7 @@ HTMLtitle_length <- function(url) {
 
   title <- try(url %>%
                  as.character() %>%
-                 read_html() %>%
+                 xml2::read_html() %>%
                  html_nodes("title"))
   title <- gsub("</?title>", "", title)
   return(nchar(as.character(title)))

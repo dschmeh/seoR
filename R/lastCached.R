@@ -13,7 +13,7 @@ lastCached <- function(url) {
            url)
   res <- try(url %>%
                as.character() %>%
-               read_html() %>%
+               xml2::read_html() %>%
                html_nodes("#google-cache-hdr > div:nth-child(1)"))
   res <-
     stringr::str_extract(

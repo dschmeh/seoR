@@ -9,7 +9,7 @@
 HTMLdescription_length <- function(url) {
   des <- try(url %>%
                as.character() %>%
-               read_html() %>%
+               xml2::read_html() %>%
                html_nodes("meta[name=description]") %>%
                html_attr("content"))
   return(nchar(des, type = "chars"))

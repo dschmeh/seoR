@@ -8,7 +8,7 @@
 
 w3cValidate <- function(url) {
   w3c <-
-    read_html(paste0(
+    xml2::read_html(paste0(
       "https://validator.w3.org/nu/?doc=",
       URLencode(url),
       "&out=json"

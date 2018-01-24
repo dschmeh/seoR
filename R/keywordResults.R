@@ -15,7 +15,7 @@ keywordResults <- function(keyword, searchengine = "google") {
     url <- paste0("https://www.google.com/search?q=", gsub(" ","+",keyword))
     res <- try(url %>%
                  as.character() %>%
-                 read_html() %>%
+                 xml2::read_html() %>%
                  html_nodes("#resultStats"))
     res <-
       stringr::str_extract(
@@ -27,7 +27,7 @@ keywordResults <- function(keyword, searchengine = "google") {
     url <- paste0("https://www.bing.com/search?q=", keyword)
     res <- try(url %>%
                  as.character() %>%
-                 read_html() %>%
+                 xml2::read_html() %>%
                  html_nodes(".sb_count"))
     res <-
       stringr::str_extract(

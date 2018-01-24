@@ -23,6 +23,7 @@ screamingfrog_crawlVsSitemap <-
     #Just keep HTML
     if (checkImages == FALSE) {
       #Just keep HTML
+      V2<-NULL;
       crawled_pages <-
         subset(crawled_pages, V2 == "text/html; charset=UTF-8")
     } else {

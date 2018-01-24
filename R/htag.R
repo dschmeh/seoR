@@ -12,7 +12,7 @@ htag <- function(url, hTag = "h1") {
 
   htag <- as.data.frame(try(url %>%
                               as.character() %>%
-                              read_html() %>%
+                              xml2::read_html() %>%
                               html_nodes(hTag) %>%
                               html_text())
   )

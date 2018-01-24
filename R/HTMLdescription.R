@@ -10,7 +10,7 @@ HTMLdescription <- function(url) {
 
   des <- try(url %>%
                as.character() %>%
-               read_html() %>%
+               xml2::read_html() %>%
                html_nodes("meta[name=description]") %>%
                html_attr("content"))
   if (nrow(as.data.frame(des)) == 0) {
