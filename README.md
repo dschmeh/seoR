@@ -9,6 +9,11 @@ The third part of the Package are the SEO-Tool APIs, that are connected. It´s p
 
 
 # Installation 
+Install the current stable Version from CRAN:
+```
+install.packages("seoR")
+```
+
 To get the current development version from github:
 
 ```
