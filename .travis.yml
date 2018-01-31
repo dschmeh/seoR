@@ -1,0 +1,16 @@
+language: r
+cache: packages
+r_packages:
+- jsonlite
+- httr
+- rvest
+- stringr
+- XML
+- robotstxt
+- igraph
+- RCurl
+- dplyr
+- readr
+- digest
+- xml2
+- utils
