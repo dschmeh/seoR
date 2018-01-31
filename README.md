@@ -1,5 +1,5 @@
-[![Rdoc](https://www.r-pkg.org/badges/version/seoR)](https://www.r-pkg.org/badges/version/seoR)
 # seoR
+[![Rdoc](https://www.r-pkg.org/badges/version/seoR)](https://www.r-pkg.org/badges/version/seoR)
 The Package provides various functions to get informations relevant for SEO related analysis in R
 
 The Goal of this package is to provide various functions to help SEOs retrive relevant informations from various APIs or Websites direct in R.
