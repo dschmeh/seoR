@@ -14,3 +14,4 @@ r_packages:
 - digest
 - xml2
 - utils
+warnings_are_errors: false
