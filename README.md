@@ -1,5 +1,5 @@
 # seoR
-[![Rdoc](https://www.r-pkg.org/badges/version/seoR)](https://www.r-pkg.org/badges/version/seoR)
+[![Rdoc](https://www.r-pkg.org/badges/version/seoR)](https://cran.r-project.org/web/packages/seoR/index.html)
 [![Build Status](https://travis-ci.org/dschmeh/seoR.svg?branch=master)](https://travis-ci.org/dschmeh/seoR)
 
 The Package provides various functions to get informations relevant for SEO related analysis in R
