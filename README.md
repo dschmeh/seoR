@@ -178,6 +178,12 @@ The function allows you to get the search results from Bing. The Function extrat
 getBingResults("R Project")
 ```
 
+## Getting Traffic of a given Wikipedia Article
+(Not on CRAN) This function allows to get the pageviews for a given Wikiepdia article.
+```
+wikipediaTraffic("R (programming language)",'2018-01-01','2018-01-10')
+```
+
 # Third-Party Tools and APIs
 We want to add more and more third party Tools and SEO-APIs to this Package. So if you have a ready Code or just a idea what could be missing, just ping us.
 
