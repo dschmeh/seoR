@@ -21,21 +21,30 @@ wikipediaTraffic <-
            agent = "user",
            granularity = "daily") {
     #TODO: Write input tests
-    y<-jsonlite::fromJSON(paste0(
-      "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/",
-      project,
-      "/",
-      platform,
-      "/",
-      agent,
-      "/",
-      gsub(" ","_",page),
-      "/",
-      granularity,
-      "/",
-      gsub("-","",start),
-      "/",
-      gsub("-","",end)
+    y <- try(jsonlite::fromJSON(
+      paste0(
+        "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/",
+        project,
+        "/",
+        platform,
+        "/",
+        agent,
+        "/",
+        gsub(" ", "_", page),
+        "/",
+        granularity,
+        "/",
+        gsub("-", "", start),
+        "/",
+        gsub("-", "", end)
+      )
     ))
-    return(y$items)
+    if (grepl("404", y[1])) {
+      return(
+        "Article not found. Please provide the Title (R (programming language))or URL-Slag (R_(programming_language)) of the Article"
+      )
+    } else
+    {
+      return(y$items)
+    }
   }
