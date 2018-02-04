@@ -7,6 +7,7 @@
 #' responseCode("https://www.r-project.org/")
 
 responseCode <- function(url) {
-  r <- httr::GET(url)
-  return(r$status_code)
+  r <- curlGetHeaders(url, redirect = FALSE)
+  status<-stringr::str_extract(r[1],"[0-9]{3}")
+  return(status)
 }
