@@ -209,7 +209,7 @@ mobileFriendly(url)
 ```
 
 ## Google Pagespeed-API R
-The pageSpeed-Function allows you to retrieve Data from Googles Pagespeed API. You will get a Value between 0 and 100 for each tested Url. You can find more information about the API her: https://developers.google.com/speed/docs/insights/v2/getting-started
+The pageSpeed-Function allows you to retrieve Data from Googles Pagespeed API (v4 Versions). You will get a Value between 0 and 100 for each tested Url. You can find more information about the API her: https://developers.google.com/speed/docs/insights/v4/getting-started
 ```
 url<-"https://www.r-project.org/"
 pageSpeed(url)
