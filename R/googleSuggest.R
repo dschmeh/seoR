@@ -14,6 +14,7 @@
 googleSuggest <-
   function(keyword,
            language = "en",
+           suggestions = TRUE,
            walkThrough = FALSE,
            questions = FALSE,
            prepositions = FALSE,
@@ -27,6 +28,7 @@ googleSuggest <-
       stop("The walkThrough should be a logical input")
     }
     keyword <- gsub(" ", "+", keyword)
+    if (suggestions == TRUE) {
     key <- xml2::read_html(
       paste0(
         "http://suggestqueries.google.com/complete/search?output=toolbar&hl=",
@@ -35,11 +37,11 @@ googleSuggest <-
         keyword
       )
     )
-    sug <- xml_find_all(key, "//suggestion")
+    sug <- xml2::xml_find_all(key, "//suggestion")
     sug <- gsub('<suggestion data="', "", sug)
     sug <- gsub('"></suggestion>', "", sug)
     sug <- as.data.frame(sug)
-    colnames(sug) <- "keyword_suggestions"
+    colnames(sug) <- "keyword_suggestions"} else {sug<-NULL;}
     # Walk through the alphabte for the given keyword (maybe add numbers)
     if (walkThrough == TRUE) {
       alphabet <- as.data.frame(c(letters))
@@ -53,7 +55,7 @@ googleSuggest <-
             paste0(keyword, "+", alphabet[i, 1])
           )
         )
-        s <- xml_find_all(key, "//suggestion")
+        s <- xml2::xml_find_all(key, "//suggestion")
         s <- gsub('<suggestion data="', "", s)
         s <- gsub('"></suggestion>', "", s)
         s <- as.data.frame(s)
@@ -67,7 +69,7 @@ googleSuggest <-
             paste0(alphabet[i, 1], "+", keyword, "+")
           )
         )
-        ss <- xml_find_all(key, "//suggestion")
+        ss <- xml2::xml_find_all(key, "//suggestion")
         ss <- gsub('<suggestion data="', "", ss)
         ss <- gsub('"></suggestion>', "", ss)
         ss <- as.data.frame(ss)
@@ -75,9 +77,9 @@ googleSuggest <-
         sug <- rbind(sug, s, ss)
       }
     }
-
+    
     #Check the Keywords with question words
-
+    
     if (isTRUE(questions)) {
       file <- paste0('~/seoR/data-raw/questions_', language, '.csv')
       questions <- readr::read_csv(file,
@@ -92,7 +94,7 @@ googleSuggest <-
             gsub(" ", "+", paste0(questions[i, 1], "+", keyword))
           )
         )
-        s <- xml_find_all(key, "//suggestion")
+        s <- xml2::xml_find_all(key, "//suggestion")
         s <- gsub('<suggestion data="', "", s)
         s <- gsub('"></suggestion>', "", s)
         s <- as.data.frame(s)
@@ -100,9 +102,9 @@ googleSuggest <-
         sug <- rbind(sug, s)
       }
     }
-
+    
     #Check the Keywords with prepositions words
-
+    
     if (isTRUE(prepositions)) {
       file <- paste0('~/seoR/data-raw/prepositions_', language, '.csv')
       prepositions <- readr::read_csv(file)
@@ -124,9 +126,9 @@ googleSuggest <-
         sug <- rbind(sug, s)
       }
     }
-
+    
     #Check the Keywords with comparisons words
-
+    
     if (isTRUE(comparisons)) {
       file <- paste0('~/seoR/data-raw/comparisons_', language, '.csv')
       comparisons <- readr::read_csv(file)
@@ -140,7 +142,7 @@ googleSuggest <-
             gsub(" ", "+", paste0(keyword, "+", comparisons[i, 1]))
           )
         )
-        s <- xml_find_all(key, "//suggestion")
+        s <- xml2::xml_find_all(key, "//suggestion")
         s <- gsub('<suggestion data="', "", s)
         s <- gsub('"></suggestion>', "", s)
         s <- as.data.frame(s)
@@ -148,6 +150,6 @@ googleSuggest <-
         sug <- rbind(sug, s)
       }
     }
-
+    
     return(unique(sug))
   }
