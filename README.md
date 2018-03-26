@@ -143,6 +143,13 @@ keyword<-"R Project"
 googleSuggest(keyword, language = "en", walkThrough = FALSE)
 ```
 
+## Get Keyword suggestions from eCommerce Pages like amazon or eBay
+The transactionalSuggest-Function returns relevant longtail keywords for a specific Keyword. The function uses the autocomplete functionalitys of given eCom-Pages, like amazon or eBay.
+
+```
+transactionalSuggest(keyword = "t shirt", language = "en_US", page = "amazon")
+```
+
 ## Number of Pages in Index
 The pagesInIndex-function allows you to perform a "site"-Search on Google to get the number of PAges in the Index for a given Domain or URL-String.
 
