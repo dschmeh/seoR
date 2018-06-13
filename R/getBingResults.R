@@ -34,7 +34,9 @@ getBingResults <- function (keyword, results = 10) {
       y %>% rvest::html_nodes(".b_algo h2 a") %>% rvest::html_attr('href')
     ),
     results)
-  res <- as.data.frame(cbind(title, descriptions, url, landingPage))
-  colnames(res) <- c("Title", "Description", "URL", "LandingPage")
-  return(res)
+    names(title) = "Title"
+    names(descriptions) = "description"
+    names(url) = "url"
+    names(landingPage) = "landingpage"
+  return(list(title = title, description = descriptions, url = url, landingpage = landingPage))
 }
