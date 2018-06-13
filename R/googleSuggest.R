@@ -9,7 +9,9 @@
 #' @param comparisons Logial. Checks keywords with comparison phrase like "beer versus wine"
 #' googleSuggest()
 #' @examples
+#' \dontrun{
 #' googleSuggest("R Project", language = "en", walkThrough = FALSE)
+#' }
 
 googleSuggest <-
   function(keyword,
