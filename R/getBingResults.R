@@ -7,7 +7,9 @@
 #' @param language The language of the search results
 #' getBingResults()
 #' @examples
+#' \dontrun{
 #' getBingResults("R Project")
+#' }
 
 getBingResults <- function (keyword, results = 10, market = NULL, language = NULL) {
   require(magrittr)
