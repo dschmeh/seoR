@@ -14,7 +14,7 @@
 getBingResults <- function (keyword, results = 10, market = NULL, language = NULL) {
   require(magrittr)
   require(rvest)
-
+  
   if(is.null(market)){
     y <-
       xml2::read_html(paste0('http://www.bing.com/search?q=',
@@ -100,10 +100,12 @@ getBingResults <- function (keyword, results = 10, market = NULL, language = NUL
   names(url) = "url"
   names(landingPage) = "landingpage"
   
+  if (results > 10) {
   title<-rbind(title,title_l)
   url<-rbind(url,url_l)
   descriptions<-rbind(descriptions,descriptions_l)
   landingPage<-rbind(landingPage,landingPage_l)
+  }
   
   return(list(title = title, description = descriptions, url = url, landingpage = landingPage))
 }
