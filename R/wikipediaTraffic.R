@@ -39,7 +39,7 @@ wikipediaTraffic <-
         gsub("-", "", end)
       )
     ))
-    if (grepl("404", y[1])) {
+    if (class(y)=="try-error") {
       return(
         "Article not found. Please provide the Title (R (programming language))or URL-Slag (R_(programming_language)) of the Article"
       )
