@@ -1,4 +1,4 @@
-#' Function to retrive data from Google Suggest for a specific keyword
+#' Function to retrive data from Bing Search for a specific keyword
 #'
 #' The function allows you to get the search results from Bing. The Function extratcts just the organic Search results. the Output is a Dataframe containing, Title,Description, URL and Landing Page.
 #' @param keyword The initial keyword you want the results for
